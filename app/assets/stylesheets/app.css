@@ -1,0 +1,239 @@
+/*
+
+Get Home Safe NYC App
+
+created by illuminati creative
+
+*/
+
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 24px;
+	line-height: 105%;
+}
+
+.title {
+	background-color: #000;
+	color: #fff;
+	font-size: 225%;
+	letter-spacing: -.05em;
+	padding: 30px;
+	width: 100%;
+	position: fixed;
+	z-index: 100000;
+}
+
+p {
+	font-size: 60%;
+}
+
+
+li {
+	list-style: none;
+}
+
+.info {
+	background-color: #eeeff3;
+	float: left;
+	padding: 125px 20px 20px 20px;
+	position: fixed;
+	min-height: 800px;
+	width: 283px;
+}
+
+.prompt {
+	font-weight: bold;
+}
+
+ul.resources {
+	margin: 0;
+	padding: 0 20px 0 20px;
+}
+.resources li {
+	font-size: 80%;
+	margin: 5px;
+}
+
+
+
+.illcreative a {
+	background: url() no-repeat;
+	color: #000;
+	display: block;
+	margin-top: 200px;
+	width: 80px;
+	height: 20px;
+}
+
+
+.listings {
+	padding: 125px 20px 20px 20px;
+	margin-left: 323px;
+	width: 65%;
+}
+
+.form-search input {
+	height: 40px;
+	width: 75%;
+}
+
+button {
+	height: 50px;
+	width: 20%;
+}
+
+.single_listing {
+	margin: 30px auto 30px auto;
+}
+
+.single_listing table {
+	width: 100%;
+}
+
+
+.basic_info td {
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	width: 49%;
+	font-size: 110%;
+}
+
+.safety span {
+	color: #000;
+	font-size: 50%;
+}
+
+.safe{color:#0f0;}
+.not_safe{color:#f00;}
+
+
+tr {
+	margin-top: 10px;
+	padding: 0 0 5px 0 ;
+	width: 100%;
+}
+
+.statuses td {
+	margin: 15px 0 0 0 ;
+	text-align: center;
+	display: inline-block;
+	width: 19%;
+}
+
+.on{color:#0f0;}
+.off{color:#f00;text-decoration:line-through;}
+.not_applicable{text-decoration:line-through;}
+
+
+
+
+/*Boroughs*/
+
+.boroughs {
+	padding: 125px 20px 20px 20px;
+	margin-left: 323px;
+	width: 65%;
+}
+
+.boroughs ul {
+	width: 75%;
+	margin: 10px 0 0 0;
+}
+
+.boroughs li {
+	border-radius:4px;
+	margin-bottom: 20px;
+}
+
+.boroughs a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.manhattan {
+	background-color: #007dc7;
+}
+
+.queens {
+	background-color: #289600;
+}
+
+.bronx {
+	background-color: #e19e00;
+}
+
+.brooklyn {
+	background-color: #da007e;
+}
+
+.staten_island {
+	background-color: #632da9;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+	
+	.title {
+		font-size: 175%;
+		padding-left: 15px;
+	}
+	
+	.info {
+		float: none;
+		padding: 110px 0px 20px 0px;
+		position: relative;
+		width: 100%;
+		min-height: auto;
+		height: auto;
+	}
+	
+	.info p, h2 {
+		padding: 0 20px 0 20px;
+	}
+	
+	.resources li {
+		display: inline-block;
+	}
+	
+	.illcreative a {
+		margin: 10px 0 0 20px;
+	}
+	
+	.boroughs {
+		padding: 0;
+		margin: 0 auto;
+		width: 90%;
+	}
+	
+	.boroughs h2 {
+		padding-left: 20px;
+	}
+	.boroughs ul {
+		width: 90%;
+		margin: 10px auto 0 auto;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
