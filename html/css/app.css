@@ -107,7 +107,7 @@ button {
 	font-size: 50%;
 }
 
-.safe{color:#0f0;}
+.safe{color:#0f0}
 .not_safe{color:#f00;}
 
 
@@ -124,9 +124,18 @@ tr {
 	width: 19%;
 }
 
-.on{color:#0f0;}
+.on{color:#0f0;list-style-image:url();}
 .off{color:#f00;text-decoration:line-through;}
 .not_applicable{text-decoration:line-through;}
+
+
+/*Individual Page*/
+
+.statuses li {
+	font-size: 150%;
+	margin: 20px;
+}
+
 
 
 
