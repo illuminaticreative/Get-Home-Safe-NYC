@@ -9,8 +9,10 @@ created by illuminati creative
 
 
 body {
+	padding: 0;
+	margin: 0;
 	font-size: 24px;
-	line-height: 110%;
+	line-height: 105%;
 }
 
 .title {
@@ -26,8 +28,8 @@ body {
 
 p {
 	font-size: 60%;
-	margin: 20px;
 }
+
 
 li {
 	list-style: none;
@@ -36,11 +38,23 @@ li {
 .info {
 	background-color: #eeeff3;
 	float: left;
-	padding: 100px 20px 20px 20px;
+	padding: 125px 20px 20px 20px;
 	position: fixed;
 	min-height: 800px;
 	width: 283px;
 }
+
+.prompt {
+	font-weight: bold;
+}
+
+.illcreative {
+	background: url() no-repeat;
+	display: block;
+	width: 80px;
+	height: 20px;
+}
+
 
 .listings {
 	padding: 125px 20px 20px 20px;
@@ -114,9 +128,11 @@ tr {
 
 .boroughs ul {
 	width: 75%;
+	margin: 10px 0 0 0;
 }
 
 .boroughs li {
+	border-radius:4px;
 	margin-bottom: 20px;
 }
 
@@ -147,6 +163,50 @@ tr {
 .staten_island {
 	background-color: #632da9;
 }
+
+
+
+
+@media screen and (max-width: 768px) {
+	
+	.info {
+		float: none;
+		padding: 125px 0px 20px 0px;
+		position: relative;
+		width: 100%;
+		min-height: auto;
+		height: auto;
+	}
+	
+	.info p, h2 {
+		padding: 0 20px 0 20px;
+	}
+	
+	.boroughs {
+		padding: 0;
+		margin: 0 auto;
+		width: 90%;
+	}
+	
+	.boroughs h2 {
+		padding-left: 20px;
+	}
+	.boroughs ul {
+		width: 90%;
+		margin: 10px auto 0 auto;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
