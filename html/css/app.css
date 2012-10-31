@@ -1,0 +1,153 @@
+/*
+
+Get Home Safe NYC App
+
+created by illuminati creative
+
+*/
+
+
+
+body {
+	font-size: 24px;
+	line-height: 110%;
+}
+
+.title {
+	background-color: #000;
+	color: #fff;
+	font-size: 225%;
+	letter-spacing: -.05em;
+	padding: 30px;
+	width: 100%;
+	position: fixed;
+	z-index: 100000;
+}
+
+p {
+	font-size: 60%;
+	margin: 20px;
+}
+
+li {
+	list-style: none;
+}
+
+.info {
+	background-color: #eeeff3;
+	float: left;
+	padding: 100px 20px 20px 20px;
+	position: fixed;
+	min-height: 800px;
+	width: 283px;
+}
+
+.listings {
+	padding: 125px 20px 20px 20px;
+	margin-left: 323px;
+	width: 65%;
+}
+
+.form-search input {
+	height: 40px;
+	width: 75%;
+}
+
+button {
+	height: 50px;
+	width: 20%;
+}
+
+.single_listing {
+	margin: 30px auto 30px auto;
+}
+
+.single_listing table {
+	width: 100%;
+}
+
+
+.basic_info td {
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	width: 49%;
+	font-size: 110%;
+}
+
+.safety span {
+	color: #000;
+	font-size: 50%;
+}
+
+.safe{color:#0f0;}
+.not_safe{color:#f00;}
+
+
+tr {
+	margin-top: 10px;
+	padding: 0 0 5px 0 ;
+	width: 100%;
+}
+
+.statuses td {
+	margin: 15px 0 0 0 ;
+	text-align: center;
+	display: inline-block;
+	width: 19%;
+}
+
+.on{color:#0f0;}
+.off{color:#f00;text-decoration:line-through;}
+.not_applicable{text-decoration:line-through;}
+
+
+
+
+/*Boroughs*/
+
+.boroughs {
+	padding: 125px 20px 20px 20px;
+	margin-left: 323px;
+	width: 65%;
+}
+
+.boroughs ul {
+	width: 75%;
+}
+
+.boroughs li {
+	margin-bottom: 20px;
+}
+
+.boroughs a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+
+.manhattan {
+	background-color: #007dc7;
+}
+
+.queens {
+	background-color: #289600;
+}
+
+.bronx {
+	background-color: #e19e00;
+}
+
+.brooklyn {
+	background-color: #da007e;
+}
+
+.staten_island {
+	background-color: #632da9;
+}
+
+
+
+
