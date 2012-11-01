@@ -113,7 +113,7 @@ ul.resources {
 
 .location {
 	clear: both;
-	padding: 20px;	
+	padding: 10px;	
 }
 
 .location p {
@@ -131,8 +131,12 @@ ul.resources {
 
 .location form {
 	margin: 20px 0;
-	background-color: #eeeff3;
+	background-color: #f7f7f9;
 	padding: 20px;
+}
+
+fieldset {
+	margin-bottom: 15px;
 }
 
 fieldset label {
@@ -238,13 +242,13 @@ td.safety {
 }
 
 td.address, th.address {
-	width: 250px;
+	width: 350px;
 }
 
 td.updated, th.updated {
-	width: 180px;
+	width: auto;
 	font-size: 50%;
-	text-align: center;
+	text-align: left;
 }
 
 td.facebook, th.facebook {
@@ -407,7 +411,8 @@ h2.not_safe {
 
 ul.social {
 	float: right;
-	margin: 18px 10px 0 0;
+	margin: 0px 10px 0 0;
+	width: auto;
 }
 
 ul.social li {
@@ -416,7 +421,7 @@ ul.social li {
 
 ul.social li a {
 	font-size: 14px;
-	padding: 10px;
+	padding: 0px;
 }
 
 ul.social li a:hover {
@@ -443,6 +448,11 @@ footer {
 	display: block;
 	background-color: #000;
 	padding: 20px 0 16px;
+}
+
+footer ul.footer-nav {
+	width:auto;
+	float: left;
 }
 
 footer ul li {
