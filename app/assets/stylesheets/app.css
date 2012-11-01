@@ -293,7 +293,6 @@ h2.not_safe {
 /*Boroughs*/
 
 .navigation {
-	display: none;
 	background-color: #fff;
 	border-bottom: 8px solid #000;
 	font-size: 55%;
@@ -370,6 +369,18 @@ ul.social li a {
 ul.social li a:hover {
 	color: #fff;
 	text-decoration: none;
+}
+
+/*Utility Nav*/
+ul.utility {
+	margin: 10px 0 0 0;
+	float: right;
+}
+
+ul.utility li {
+	margin-left: 20px;
+	float: left;
+	font-size: 60%;
 }
 
 /*Footer*/
