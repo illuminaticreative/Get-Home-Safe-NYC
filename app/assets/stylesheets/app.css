@@ -12,6 +12,7 @@ body {
 	font-size: 24px;
 	line-height: 90%;
 	min-width: 960px;
+	background-color: #eeeff3;
 }
 
 .title {
@@ -46,7 +47,12 @@ li {
 .container {
 	padding: 0;
 	margin: 0;
-	width: 100%;
+	width: 980px;
+	margin: 0 auto;
+	background-color: #fff;
+	-moz-box-shadow: 0px 0px 4px #bebfc2;
+	-webkit-box-shadow: 0px 0px 4px #bebfc2;
+	box-shadow: 0px 0px 4px #bebfc2;
 }
 
 .content
@@ -61,7 +67,7 @@ li {
 	padding: 0 20px 20px 20px;
 	min-height: 800px;
 	height: 100%;
-	width: 260px;
+	width: 250px;
 	float: left;
 	border-left: 1px solid #ccc;
 }
@@ -131,11 +137,12 @@ button {
 	margin: 30px auto 30px auto;
 }
 
-.single_listing table {
-	width: 100%;
+/*Table*/
+
+table {
+	width: 620px;
+	border: 1px #ccc solid;
 }
-
-
 .basic_info td {
 	display: inline-block;
 	text-align: center;
@@ -144,17 +151,56 @@ button {
 	font-size: 110%;
 }
 
-tr {
-	margin-top: 10px;
-	padding: 0 0 5px 0 ;
+table th {
+	color: #fff;
+	background-color: #000;	
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	padding: 10px;
+	text-align: left;  
+}
+
+table tr, table thead, table tbody {
 	width: 100%;
 }
 
-.statuses td {
-	margin: 15px 0 0 0 ;
-	text-align: center;
+tr.even {
+	background-color: #eeeff3;
+}
+
+td {
+	margin: 0;
+	padding: 10px;
 	display: inline-block;
-	width: 19%;
+	font-size: 14px;
+	text-align: left;
+}
+
+td.safety, th.safety {
+	width: 40px;
+}
+
+td.safety {
+	text-align: center;
+}
+
+td.address, th.address {
+	width: 250px;
+}
+
+td.updated, th.updated {
+	width: 140px;
+}
+
+td.facebook, th.facebook {
+	width: 20px;
+	text-align: center;	
+}
+
+td.twitter, th.twitter {
+	width: 20px;
+	text-align: center;	
 }
 
 /*Individual Page*/
@@ -165,13 +211,13 @@ tr {
 	width: auto;
 }
 
-.address {
+div.address {
 	border: solid 1px;
 	width: 578px;
 	padding: 20px;
 }
 
-.address p {
+div.address p {
 	font-size:36px;
 	line-height: 42px;
 }
@@ -304,6 +350,52 @@ h2.not_safe {
 	background-color: #632da9;
 }
 
+/*Social Nav*/
+
+ul.social {
+	float: right;
+	margin: 18px 10px 0 0;
+}
+
+ul.social li {
+	float: left;
+}
+
+ul.social li a {
+	font-size: 14px;
+	padding: 10px;
+}
+
+ul.social li a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Footer*/
+
+footer {
+	clear: both;
+	display: block;
+	background-color: #000;
+	padding: 20px 0 16px;
+}
+
+footer ul li {
+	float: left;
+	font-size: 12px;
+	color: #aaa;
+	margin-right: 20px;
+}
+
+footer ul li a {
+	color: #aaa;
+}
+
+footer ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+/*
 @media screen and (max-width: 768px) {
 	
 	.title {
@@ -345,37 +437,4 @@ h2.not_safe {
 		width: 90%;
 		margin: 10px auto 0 auto;
 	}	
-}
-
-ul.social {
-	float: right;
-	margin: 18px 10px 0 0;
-}
-
-ul.social li {
-	float: left;
-}
-
-ul.social li a {
-	font-size: 14px;
-	padding: 10px;
-}
-
-ul.social li a:hover {
-	color: #fff;
-	text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}*/
