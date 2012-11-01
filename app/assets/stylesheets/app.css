@@ -191,6 +191,7 @@ td.address, th.address {
 
 td.updated, th.updated {
 	width: 140px;
+	font-size: 50%;
 }
 
 td.facebook, th.facebook {
@@ -228,24 +229,23 @@ div.address p {
 	background-color: #000;
 }
 
+.status.notsafe {
+	background-color: #c90000;
+}
+
+.status.safe {
+	background-color: #289600;
+}
+
 .status h2 {
 	color: #fff;
 	padding: 12px 20px;
 }
 
-.
-
-h2.safe {
-	background-color: #000;
-	color: #fff;
-	margin: 0;
-	float:left;
-}
-
 h3.update {
 	padding: 24px 20px 0 0px;
-	color: #aaa;
-	float:left;
+	color: #fff;
+	float:right;
 	width: auto;
 	text-align: left;
 	font-weight: normal;
@@ -293,8 +293,9 @@ h2.not_safe {
 /*Boroughs*/
 
 .navigation {
+	display: none;
 	background-color: #fff;
-	border-bottom: 8px solid #007dc7;
+	border-bottom: 8px solid #000;
 	font-size: 55%;
 	padding: 0;
 }

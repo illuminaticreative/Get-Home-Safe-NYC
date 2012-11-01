@@ -17,7 +17,7 @@
         <tr class="<%= cycle("odd", "even") %>">
         <td class="safety <%=is_safe(location)%>"><img src="images/<%=is_safe(location)%>.svg"/></td>			
         <td class="address"><%= link_to location.address, location %></td>
-        <td class="updated"><%= location.updated_at %></td>
+        <td class="updated"><%= location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></td>
 				<td class="facebook">FB</td>
 				<td class="twitter">TW</td>
 			</tr>
