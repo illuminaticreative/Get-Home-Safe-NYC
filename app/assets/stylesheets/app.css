@@ -242,8 +242,9 @@ td.address, th.address {
 }
 
 td.updated, th.updated {
-	width: 140px;
+	width: 180px;
 	font-size: 50%;
+	text-align: center;
 }
 
 td.facebook, th.facebook {
