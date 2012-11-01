@@ -25,8 +25,15 @@ ActiveRecord::Schema.define(:version => 20121101011307) do
     t.string   "longitude"
     t.boolean  "verified"
     t.integer  "borough_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.boolean  "safe"
+    t.boolean  "power"
+    t.boolean  "heat"
+    t.boolean  "water"
+    t.boolean  "flooding"
+    t.boolean  "elivators_available"
+    t.boolean  "elivators_operational"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
 end
