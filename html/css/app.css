@@ -17,6 +17,7 @@ body {
 
 .title {
 	background-color: #000;
+	border-bottom: solid 4px #fff;
 	color: #fff;
 	font-size: 225%;
 	letter-spacing: -.05em;
@@ -24,6 +25,11 @@ body {
 	width: 100%;
 	position: fixed;
 	z-index: 100000;
+}
+
+.title a, .title a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 p {
@@ -35,10 +41,10 @@ li {
 	list-style: none;
 }
 
-.info {
+.sidebar {
 	background-color: #eeeff3;
-	float: left;
-	padding: 125px 20px 20px 20px;
+	right: 0;
+	padding: 35px 20px 20px 20px;
 	position: fixed;
 	min-height: 800px;
 	width: 283px;
@@ -57,13 +63,12 @@ ul.resources {
 	margin: 5px;
 }
 
-
-
 .illcreative a {
-	background: url() no-repeat;
+	background: url("images/illuminati_logo.svg");
 	color: #000;
 	display: block;
-	margin-top: 200px;
+	margin-top: 40px;
+	text-indent: -9999em;
 	width: 80px;
 	height: 20px;
 }
@@ -76,13 +81,15 @@ ul.resources {
 }
 
 .form-search input {
-	height: 40px;
-	width: 75%;
+	height: 28px;
+	margin-top: 4px;
+	width: 65%;
 }
 
 button {
-	height: 50px;
-	width: 20%;
+	height: 38px;
+	margin-top: 4px;
+	width: 30%;
 }
 
 .single_listing {
@@ -102,15 +109,6 @@ button {
 	font-size: 110%;
 }
 
-.safety span {
-	color: #000;
-	font-size: 50%;
-}
-
-.safe{color:#0f0}
-.not_safe{color:#f00;}
-
-
 tr {
 	margin-top: 10px;
 	padding: 0 0 5px 0 ;
@@ -124,67 +122,133 @@ tr {
 	width: 19%;
 }
 
-.on{color:#0f0;list-style-image:url();}
-.off{color:#f00;text-decoration:line-through;}
-.not_applicable{text-decoration:line-through;}
+
+
 
 
 /*Individual Page*/
 
-.statuses li {
+.content h2 {
+	border: solid 1px;
+	border-top: solid 10px;
 	font-size: 150%;
-	margin: 20px;
+	float: left;
+	padding: 10px;
+	width: auto;
+	min-width: 300px;
 }
 
+h2.safe {
+	background-color: #000;
+	border-top: double 15px;
+	color: #fff;
+	float: right;
+	margin-top: -5px;
+	width: 200px;
+	min-width: 0;	
+}
 
+h2.not_safe {
+	background-color: #f00;
+	border-top: double 15px;
+	color: #fff;
+	float: right;
+	margin-top: -5px;
+	width: 200px;
+	min-width: 0;
+}
 
+.statuses li {
+	font-size: 125%;
+	margin: 20px auto auto -20px;
+	width: 250px;
+}
+
+.on {
+	background-color: #000;
+	border-top: double 15px;
+	color: #fff;
+	padding: 10px 0 15px 10px;
+}
+
+.off {
+	background-color: #f00;
+	border-top: double 15px;
+	color: #fff;
+	padding: 10px 0 15px 10px;
+
+}
 
 
 /*Boroughs*/
 
-.boroughs {
-	padding: 125px 20px 20px 20px;
-	margin-left: 323px;
-	width: 65%;
+.navigation {
+	background-color: #aaa;
+	font-size: 55%;
+	padding: 90px 0px 0px 0px;
 }
 
-.boroughs ul {
-	width: 75%;
-	margin: 10px 0 0 0;
+.navigation ul {
+	float: left;
+	height: 100%;
+	margin: 0 0px 0 0;
+	padding: 0;
+	width: 64%;
 }
 
-.boroughs li {
-	border-radius:4px;
-	margin-bottom: 20px;
+.navigation li {
+	background-color: #aaa;
+	border-right: solid 1px #fff;
+	display: inline-block;
+	width: 16%;
+	margin: 0 0 0 -4px;
 }
 
-.boroughs a {
+.navigation a {
 	display: block;
 	color: #fff;
 	text-align: center;
-	padding: 20px;
+	padding: 23px 0 19px 0;
+	width: 100%;
 }
 
-
-.manhattan {
+.all.current {
+	background-color: #000;
+}
+.manhattan.current {
 	background-color: #007dc7;
 }
-
-.queens {
+.queens.current {
 	background-color: #289600;
 }
-
-.bronx {
+.bronx.current {
 	background-color: #e19e00;
 }
-
-.brooklyn {
+.brooklyn.current {
 	background-color: #da007e;
 }
-
-.staten_island {
+.staten_island.current {
 	background-color: #632da9;
 }
+
+
+
+
+.search {
+	float: right;
+	margin-top: 10px;
+	width: 35%;
+}
+
+.search form {
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
 
 
 
@@ -196,7 +260,7 @@ tr {
 		padding-left: 15px;
 	}
 	
-	.info {
+	.sidebar {
 		float: none;
 		padding: 110px 0px 20px 0px;
 		position: relative;
