@@ -195,7 +195,7 @@ button {
 /*Table*/
 
 table {
-	width: 620px;
+	width: 100%;
 	border: 1px #ccc solid;
 }
 .basic_info td {
@@ -269,9 +269,9 @@ td.twitter, th.twitter {
 }
 
 div.address {
-	border: solid 1px;
-	width: 578px;
-	padding: 20px;
+	width: 100%;
+	background-color: #f7f7f9;
+	padding: 20px 0;
 }
 
 div.address p {
@@ -281,7 +281,7 @@ div.address p {
 
 .status {
 	margin: 0 0 -1px 0;
-	width: 620px;	
+	width: 100%;	
 	background-color: #000;
 }
 
@@ -322,7 +322,7 @@ h2.not_safe {
 	margin: 0;
 	background-color: #000;
 	display: block;
-	width: 620px;
+	width: 100%;
 }
 
 .statuses li {
@@ -512,10 +512,6 @@ footer ul li a:hover {
 		width: 100%;
 	}
 	
-	.resources li {
-		display: inline-block;
-	}
-	
 	.illcreative a {
 		margin: 10px 0 0 20px;
 	}
@@ -576,6 +572,9 @@ footer ul li a:hover {
 		min-height: inherit;
 		position: relative;
 	}
+	
+	.sidebar {}
+	
 	.title {
 		font-size: 125%;
 		text-align: center;
