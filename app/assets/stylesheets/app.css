@@ -241,7 +241,7 @@ td.safety {
 }
 
 td.address, th.address {
-	width: 60%;
+	width: 55%;
 }
 
 td.updated, th.updated {
@@ -491,8 +491,6 @@ footer ul li a:hover {
 		padding: 0;
 		width: 100%;
 	}
-	
-	
 }
 
 
@@ -583,11 +581,16 @@ footer ul li a:hover {
 	footer ul.footer-nav {
 		width: auto;
 		float: none;
+		margin-left: 18px;
 	}
 	
 	ul.social {
 		float: none;
 		margin: 20px 10px 0 20px;
 		width: auto;
+	}
+	
+	td.updated, th.updated {
+		display: none;
 	}
 }
