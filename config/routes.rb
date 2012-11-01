@@ -1,5 +1,5 @@
 GetHomeSafeNyc::Application.routes.draw do
   resources :locations
   get "/search" => "locations#new"
-  root :to => 'locations'
+  root :to => 'locations#index'
 end
