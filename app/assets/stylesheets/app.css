@@ -6,13 +6,12 @@ created by illuminati creative
 
 */
 
-
-
 body {
 	padding: 0;
 	margin: 0;
 	font-size: 24px;
-	line-height: 105%;
+	line-height: 90%;
+	min-width: 960px;
 }
 
 .title {
@@ -20,10 +19,19 @@ body {
 	color: #fff;
 	font-size: 225%;
 	letter-spacing: -.05em;
-	padding: 30px;
+	padding: 30px 0 30px 0;
 	width: 100%;
-	position: fixed;
 	z-index: 100000;
+}
+
+.title a
+{
+	padding: 0 20px;
+}
+
+.title a, .title a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 p {
@@ -35,13 +43,31 @@ li {
 	list-style: none;
 }
 
-.info {
-	background-color: #eeeff3;
+.container {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.content
+{
 	float: left;
-	padding: 125px 20px 20px 20px;
-	position: fixed;
+	padding: 20px 20px;
+	width: 600px;
+}
+
+.sidebar {
+	margin: 20px;
+	padding: 0 20px 20px 20px;
 	min-height: 800px;
-	width: 283px;
+	height: 100%;
+	width: 260px;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+
+.sidebar section {
+	margin-bottom: 35px;
 }
 
 .prompt {
@@ -49,21 +75,19 @@ li {
 }
 
 ul.resources {
-	margin: 0;
-	padding: 0 20px 0 20px;
+	margin: 0 0 0 -5px;
+	padding: 0;
 }
 .resources li {
-	font-size: 80%;
+	font-size: 60%;
 	margin: 5px;
 }
 
-
-
 .illcreative a {
-	background: url() no-repeat;
-	color: #000;
+	background-image: url(illuminati_logo.png) ;
 	display: block;
-	margin-top: 200px;
+	text-indent: -9999em;
+	overflow: hidden;
 	width: 80px;
 	height: 20px;
 }
@@ -76,14 +100,32 @@ ul.resources {
 }
 
 .form-search input {
-	height: 40px;
-	width: 75%;
+	height: 20px;
+	margin: 4px 0 0 0;
+	width: 65%;
+}
+
+.form-search {
+	margin: 0;
+}
+
+.search {
+	float: right;
+	margin-top: 4px;
+	padding-right: 10px;
+	width: 270px;
+}
+.search form {
+	
 }
 
 button {
-	height: 50px;
-	width: 20%;
+	height: 30px;
+	margin-top: 4px;
+	width: 28%;
+	float: right;
 }
+
 
 .single_listing {
 	margin: 30px auto 30px auto;
@@ -102,15 +144,6 @@ button {
 	font-size: 110%;
 }
 
-.safety span {
-	color: #000;
-	font-size: 50%;
-}
-
-.safe{color:#0f0}
-.not_safe{color:#f00;}
-
-
 tr {
 	margin-top: 10px;
 	padding: 0 0 5px 0 ;
@@ -124,70 +157,152 @@ tr {
 	width: 19%;
 }
 
-.on{color:#0f0;list-style-image:url();}
-.off{color:#f00;text-decoration:line-through;}
-.not_applicable{text-decoration:line-through;}
-
-
 /*Individual Page*/
-
-.statuses li {
+.content h2 {
 	font-size: 150%;
-	margin: 20px;
+	float: left;
+	padding: 10px;
+	width: auto;
 }
 
+.address {
+	border: solid 1px;
+	width: 578px;
+	padding: 20px;
+}
 
+.address p {
+	font-size:36px;
+	line-height: 42px;
+}
 
+.status {
+	margin: 0 0 -1px 0;
+	width: 620px;	
+	background-color: #000;
+}
+
+.status h2 {
+	color: #fff;
+	padding: 12px 20px;
+}
+
+.
+
+h2.safe {
+	background-color: #000;
+	color: #fff;
+	margin: 0;
+	float:left;
+}
+
+h3.update {
+	padding: 24px 20px 0 0px;
+	color: #aaa;
+	float:left;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+h2.not_safe {
+	background-color: #f00;
+	border-top: double 15px;
+	color: #fff;
+	float: right;
+	margin-top: -5px;
+	width: 200px;
+	min-width: 0;
+}
+
+.statuses {
+	margin: 0;
+	background-color: #000;
+	display: block;
+	width: 620px;
+}
+
+.statuses li {
+	font-size: 60%;
+	margin: 0;
+	float: left;
+	padding: 14px
+}
+
+.on {
+	background-color: #000;
+	color: #fff;
+	padding: 10px 0 15px 10px;
+}
+
+.off {
+	background-color: #f00;
+	color: #fff;
+	padding: 10px 0 15px 10px;
+
+}
 
 
 /*Boroughs*/
 
-.boroughs {
-	padding: 125px 20px 20px 20px;
-	margin-left: 323px;
-	width: 65%;
+.navigation {
+	background-color: #fff;
+	border-bottom: 8px solid #007dc7;
+	font-size: 55%;
+	padding: 0;
 }
 
-.boroughs ul {
-	width: 75%;
-	margin: 10px 0 0 0;
+.navigation ul {
+	float: left;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 64%;
 }
 
-.boroughs li {
-	border-radius:4px;
-	margin-bottom: 20px;
+.navigation li {
+	background-color: #fff;
+	display: inline-block;
+	margin: 0;
 }
 
-.boroughs a {
+.navigation a {
 	display: block;
-	color: #fff;
+	color: #aaa;
 	text-align: center;
-	padding: 20px;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 15px 20px 14px 20px;
 }
 
+.navigation a:hover {
+	color: #333;
+	text-decoration: none;
+}
 
-.manhattan {
+.current a {
+	color: #fff;
+}
+
+.all.current {
+	background-color: #000;
+}
+.manhattan.current {
 	background-color: #007dc7;
 }
-
-.queens {
+.queens.current {
 	background-color: #289600;
 }
-
-.bronx {
+.bronx.current {
 	background-color: #e19e00;
 }
-
-.brooklyn {
+.brooklyn.current {
 	background-color: #da007e;
 }
-
-.staten_island {
+.staten_island.current {
 	background-color: #632da9;
 }
-
-
-
 
 @media screen and (max-width: 768px) {
 	
@@ -196,7 +311,7 @@ tr {
 		padding-left: 15px;
 	}
 	
-	.info {
+	.sidebar {
 		float: none;
 		padding: 110px 0px 20px 0px;
 		position: relative;
@@ -229,8 +344,26 @@ tr {
 	.boroughs ul {
 		width: 90%;
 		margin: 10px auto 0 auto;
-	}
-	
+	}	
+}
+
+ul.social {
+	float: right;
+	margin: 18px 10px 0 0;
+}
+
+ul.social li {
+	float: left;
+}
+
+ul.social li a {
+	font-size: 14px;
+	padding: 10px;
+}
+
+ul.social li a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 

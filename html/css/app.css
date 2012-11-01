@@ -6,25 +6,27 @@ created by illuminati creative
 
 */
 
-
-
 body {
 	padding: 0;
 	margin: 0;
 	font-size: 24px;
-	line-height: 105%;
+	line-height: 90%;
+	min-width: 960px;
 }
 
 .title {
 	background-color: #000;
-	border-bottom: solid 4px #fff;
 	color: #fff;
 	font-size: 225%;
 	letter-spacing: -.05em;
-	padding: 30px;
+	padding: 30px 0 30px 0;
 	width: 100%;
-	position: fixed;
 	z-index: 100000;
+}
+
+.title a
+{
+	padding: 0 20px;
 }
 
 .title a, .title a:hover {
@@ -41,13 +43,25 @@ li {
 	list-style: none;
 }
 
+.content
+{
+	float: left;
+	padding: 20px 20px;
+	width: 600px;
+}
+
 .sidebar {
-	background-color: #eeeff3;
-	right: 0;
-	padding: 35px 20px 20px 20px;
-	position: fixed;
+	margin: 20px;
+	padding: 0 20px 20px 20px;
 	min-height: 800px;
-	width: 283px;
+	height: 100%;
+	width: 260px;
+	float: left;
+	border-left: 1px solid #ccc;
+}
+
+.sidebar section {
+	margin-bottom: 35px;
 }
 
 .prompt {
@@ -55,20 +69,19 @@ li {
 }
 
 ul.resources {
-	margin: 0;
-	padding: 0 20px 0 20px;
+	margin: 0 0 0 -5px;
+	padding: 0;
 }
 .resources li {
-	font-size: 80%;
+	font-size: 60%;
 	margin: 5px;
 }
 
 .illcreative a {
-	background: url("images/illuminati_logo.svg");
-	color: #000;
+	background-image: url(illuminati_logo.png) ;
 	display: block;
-	margin-top: 40px;
 	text-indent: -9999em;
+	overflow: hidden;
 	width: 80px;
 	height: 20px;
 }
@@ -81,16 +94,32 @@ ul.resources {
 }
 
 .form-search input {
-	height: 28px;
-	margin-top: 4px;
+	height: 20px;
+	margin: 4px 0 0 0;
 	width: 65%;
 }
 
-button {
-	height: 38px;
-	margin-top: 4px;
-	width: 30%;
+.form-search {
+	margin: 0;
 }
+
+.search {
+	float: right;
+	margin-top: 4px;
+	padding-right: 10px;
+	width: 270px;
+}
+.search form {
+	
+}
+
+button {
+	height: 30px;
+	margin-top: 4px;
+	width: 28%;
+	float: right;
+}
+
 
 .single_listing {
 	margin: 30px auto 30px auto;
@@ -122,30 +151,53 @@ tr {
 	width: 19%;
 }
 
-
-
-
-
 /*Individual Page*/
-
 .content h2 {
-	border: solid 1px;
-	border-top: solid 10px;
 	font-size: 150%;
 	float: left;
 	padding: 10px;
 	width: auto;
-	min-width: 300px;
 }
+
+.address {
+	border: solid 1px;
+	width: 578px;
+	padding: 20px;
+}
+
+.address p {
+	font-size:36px;
+	line-height: 42px;
+}
+
+.status {
+	margin: 0 0 -1px 0;
+	width: 620px;	
+	background-color: #000;
+}
+
+.status h2 {
+	color: #fff;
+	padding: 12px 20px;
+}
+
+.
 
 h2.safe {
 	background-color: #000;
-	border-top: double 15px;
 	color: #fff;
-	float: right;
-	margin-top: -5px;
-	width: 200px;
-	min-width: 0;	
+	margin: 0;
+	float:left;
+}
+
+h3.update {
+	padding: 24px 20px 0 0px;
+	color: #aaa;
+	float:left;
+	width: auto;
+	text-align: left;
+	font-weight: normal;
+	font-size: 14px;
 }
 
 h2.not_safe {
@@ -158,22 +210,28 @@ h2.not_safe {
 	min-width: 0;
 }
 
+.statuses {
+	margin: 0;
+	background-color: #000;
+	display: block;
+	width: 620px;
+}
+
 .statuses li {
-	font-size: 125%;
-	margin: 20px auto auto -20px;
-	width: 250px;
+	font-size: 60%;
+	margin: 0;
+	float: left;
+	padding: 14px
 }
 
 .on {
 	background-color: #000;
-	border-top: double 15px;
 	color: #fff;
 	padding: 10px 0 15px 10px;
 }
 
 .off {
 	background-color: #f00;
-	border-top: double 15px;
 	color: #fff;
 	padding: 10px 0 15px 10px;
 
@@ -183,33 +241,42 @@ h2.not_safe {
 /*Boroughs*/
 
 .navigation {
-	background-color: #aaa;
+	background-color: #fff;
+	border-bottom: 8px solid #007dc7;
 	font-size: 55%;
-	padding: 90px 0px 0px 0px;
+	padding: 0;
 }
 
 .navigation ul {
 	float: left;
 	height: 100%;
-	margin: 0 0px 0 0;
+	margin: 0;
 	padding: 0;
 	width: 64%;
 }
 
 .navigation li {
-	background-color: #aaa;
-	border-right: solid 1px #fff;
+	background-color: #fff;
 	display: inline-block;
-	width: 16%;
-	margin: 0 0 0 -4px;
+	margin: 0;
 }
 
 .navigation a {
 	display: block;
-	color: #fff;
+	color: #aaa;
 	text-align: center;
-	padding: 23px 0 19px 0;
-	width: 100%;
+	font-weight: bold;
+	font-size: 13px;
+	padding: 15px 20px 14px 20px;
+}
+
+.navigation a:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.current a {
+	color: #fff;
 }
 
 .all.current {
@@ -230,28 +297,6 @@ h2.not_safe {
 .staten_island.current {
 	background-color: #632da9;
 }
-
-
-
-
-.search {
-	float: right;
-	margin-top: 10px;
-	width: 35%;
-}
-
-.search form {
-	margin-bottom: 5px;
-}
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
 	
@@ -293,8 +338,26 @@ h2.not_safe {
 	.boroughs ul {
 		width: 90%;
 		margin: 10px auto 0 auto;
-	}
-	
+	}	
+}
+
+ul.social {
+	float: right;
+	margin: 18px 10px 0 0;
+}
+
+ul.social li {
+	float: left;
+}
+
+ul.social li a {
+	font-size: 14px;
+	padding: 10px;
+}
+
+ul.social li a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
 

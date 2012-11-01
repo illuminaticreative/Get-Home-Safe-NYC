@@ -24,8 +24,10 @@ _gaq.push(['_trackPageview']);
 </script>	
 </head>
 <body>
+	<div class="container">
 <%= render "shared/header" %>
-<%= render "shared/left_info" %>
 <%= yield %>
+<%= render "shared/left_info" %>
+	</div>
 </body>
 </html>

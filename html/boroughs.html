@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<!-- stylesheets -->
+		<link rel="stylesheet" href="css/reset.css" type="text/css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/bootstrap-responsive.min.css" type="text/css" />
 		<link rel="stylesheet" href="css/app.css" type="text/css" />
@@ -24,66 +25,73 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-
 		</script>	
 	</head>
 	<body>
-		
-		<h1 class="title"><a href="#">Get Home Safe NYC</a></h1>
-		
-		
-		<div class="navigation clearfix">
-			<ul>
-				<li class="all current"><a href="#">All NYC</a></li>
-				<li class="manhattan"><a href="#">Manhattan</a></li>
-				<li class="bronx"><a href="#">Bronx</a></li>
-				<li class="queens"><a href="#">Queens</a></li>
-				<li class="brooklyn"><a href="#">Brooklyn</a></li>
-				<li class="staten_island"><a href="#">Staten Island</a></li>
-			</ul>
-		
-			<div class="search">
-				<form class="form-search">
-				  <input type="text" class="input-medium search-query" placeholder="Search...">
-				  <button type="submit" class="btn">Search</button>
-				</form>
+		<div class="container">
+			<header>
+				<h1 class="title"><a href="#">Get Home Safe NYC</a></h1>
+				<div class="navigation clearfix">
+					<ul>
+						<li class="all"><a href="#">All NYC</a></li>
+						<li class="manhattan current"><a href="#">Manhattan</a></li>
+						<li class="bronx"><a href="#">Bronx</a></li>
+						<li class="queens"><a href="#">Queens</a></li>
+						<li class="brooklyn"><a href="#">Brooklyn</a></li>
+						<li class="staten_island"><a href="#">Staten Island</a></li>
+					</ul>
+
+					<div class="search">
+						<form class="form-search">
+						  <input type="text" class="input-medium search-query" placeholder="Search...">
+						  <button type="submit" class="btn">Search</button>
+						</form>
+					</div>
+				</div>
+			</header>
+			
+			<div class="content">
+				<section class="single">
+					<div class="status clearfix">
+						<h2 class="safe">Safe</h2>
+						<h3 class="update">Updated: Oct. 31, 12:00pm</h3>
+						<ul class="social">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Twitter</a></li>						
+						</ul>
+					</div>
+					<div class="address clearfix">
+						<p>300 E. 56th Street<br/>
+						New York, 10010</p>
+					</div>
+					<ul class="statuses clearfix">
+						<li class="on">Power On</li>
+						<li class="on">Water On</li>
+						<li class="on">Heat On</li>
+						<li class="off">Flooding</li>
+						<li class="off">Elevators</li>						
+					</ul>
+				</section>
 			</div>
-			
-		
-		
+			<div class="sidebar">
+				<section>
+					<h2>About</h2>
+					<p>In the wake of Hurricane Sandy, many New Yorkers have been forced to evacuate their homes, unsure when they'll be able to return. The purpose of this site is to offer residents a way to share information about specific buildings, letting others know what to expect at their apartment and if it's safe to go home.</p>
+					<p><span class="prompt">Do you know your building's status?</span> <br/><a href="#">Update your neighbors here »</a></p>
+				</section>
+				<section>
+					<h3>Resources:</h3>
+					<ul class="resources">
+						<li><a href="http://www.nyc.gov" target="_blank">NYC.gov</a></li>
+						<li><a href="https://twitter.com/notifynyc" target="_blank">Notify NYC</a></li>
+						<li><a href="http://project.wnyc.org/transit-tracker/embed.html" target="_blank">Transit Tracker</a></li>
+						<li><a href="http://google.org/crisismap/2012-sandy" target="_blank">Google Crisis Map</a></li>
+						<li><a href="http://coned.com" target="_blank">Con Edison</a></li>
+						<li><a href="http://www.disasterassistance.gov/" target="_blank">Disaster Assistance</a></li>
+					</ul>
+				</section>
+				<div class="illcreative"><a href="http://illcreative.com">illuminati</a></div>
+			</div>
 		</div>
-
-
-		
-		<div class="content">
-			
-			
-		</div>
-
-
-
-		<div class="sidebar">
-			
-			<h2>About</h2>
-			
-			<p>In the wake of Hurricane Sandy, many New Yorkers have been forced to evacuate their homes, unsure when they'll be able to return. The purpose of this site is to offer residents a way to share information about specific buildings, letting others know what to expect at their apartment and if it's safe to go home.</p>
-			
-			<p></p>
-
-			<p><span class="prompt">If you know the status of a building</span> <a href="#">please update your neighbors here.</a></p>
-			
-			<p>Resources:</p>
-			<ul class="resources">
-				<li><a href="http://www.nyc.gov">NYC.gov</a></li>
-				<li><a href="https://twitter.com/notifynyc">Notify NYC</a></li>
-				<li><a href="http://project.wnyc.org/transit-tracker/embed.html">Transit Tracker</a></li>
-				<li><a href="http://google.org/crisismap/2012-sandy">Google Crisis Map</a></li>
-				<li><a href="http://coned.com">Con Edison</a></li>
-				<li><a href="http://www.disasterassistance.gov/">Disaster Assistance</a></li>
-			</ul>
-			
-			<div class="illcreative"><a href="http://illcreative.com">illuminati</a></div>
-		</div>
-		
 	</body>
 </html>
