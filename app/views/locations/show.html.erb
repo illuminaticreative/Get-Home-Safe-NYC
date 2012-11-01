@@ -8,9 +8,9 @@
 			<p><%= @location.address %></p>
 		</div>
 		<ul class="statuses clearfix">
-			<li class="on">Power On</li>
-			<li class="on">Water On</li>
-			<li class="on">Heat On</li>
+			<li class="on">Power <%= @location.power ? "On" : "Off" %></li>
+			<li class="on">Water <%= @location.water ? "On" : "Off" %></li>
+			<li class="on">Heat <%= @location.heat ? "On" : "Off" %></li>
 			<li class="off">Flooding</li>
 			<li class="off">Elevators</li>						
 		</ul>

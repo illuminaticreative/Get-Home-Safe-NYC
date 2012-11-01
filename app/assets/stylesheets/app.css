@@ -76,7 +76,13 @@ li {
 	margin-bottom: 35px;
 }
 
+section.about p { color: #aaa; }
+section.disclaimer p { color: #aaa; font-size: 50%; }
+section.disclaimer p .propmpt { color: #000; }
+
+
 .prompt {
+	color: #000;
 	font-weight: bold;
 }
 
@@ -105,6 +111,14 @@ ul.resources {
 	width: 65%;
 }
 
+.location {
+	clear: both;
+	padding: 20px;	
+}
+
+.location p {
+	font-size: 100%;
+}
 .form-search input {
 	height: 20px;
 	margin: 4px 0 0 0;
@@ -114,6 +128,44 @@ ul.resources {
 .form-search {
 	margin: 0;
 }
+
+.location form {
+	margin: 20px 0;
+	background-color: #eeeff3;
+	padding: 20px;
+}
+
+fieldset label {
+	font-size: 120%;
+	display: inline-block;
+	width: 200px;
+}
+
+fieldset.elevator label.radio {
+	display: inline-block;
+	width: auto;
+	margin: 0 20px 0 4px;
+	padding: 0;
+}
+
+fieldset input {
+	display: inline-block;
+}
+
+fieldset {
+	font-size: 60%;
+}
+
+input[type="radio"] {
+	
+}
+
+.location input[type="submit"] {
+	margin-top: 20px;
+	padding: 10px 40px;
+}
+
+/*Search*/	
 
 .search {
 	float: right;
@@ -253,7 +305,7 @@ h3.update {
 }
 
 h2.not_safe {
-	background-color: #f00;
+	background-color: #c90000;
 	border-top: double 15px;
 	color: #fff;
 	float: right;
@@ -283,7 +335,7 @@ h2.not_safe {
 }
 
 .off {
-	background-color: #f00;
+	background-color: #c90000;
 	color: #fff;
 	padding: 10px 0 15px 10px;
 

@@ -1,9 +1,10 @@
 <div class="sidebar">
-	<section>
+	<section class="about">
 		<h2>About</h2>
 		<p>In the wake of Hurricane Sandy, many New Yorkers have been forced to evacuate their homes, unsure when they'll be able to return. The purpose of this site is to offer residents a way to share information about specific buildings, letting others know what to expect at their apartment and if it's safe to go home.</p>
-		<p><span class="prompt">Disclaimer: The following information is for public informational purposes only and is not reviewed by the site owners. Get Home Safe NYC and its parents assume no responsibility to parties receiving and using the information. By using this website you acknowledge this.</span></p>
-		<p><span class="prompt">Do you know your building's status?</span> <br/><a href="#">Update your neighbors here »</a></p>
+	</section>
+	<section>
+		<p><span class="prompt">Do you know your building's status?</span> <br/><%= link_to "Update your neighbors here »", new_location_path() %></a></p>
 	</section>
 	<section>
 		<h3>Resources:</h3>
@@ -16,5 +17,7 @@
 			<li><a href="http://www.disasterassistance.gov/" target="_blank">Disaster Assistance</a></li>
 		</ul>
 	</section>
-	<div class="illcreative"><a href="http://illcreative.com">illuminati</a></div>
+	<section class="disclaimer">	
+		<p><span class="prompt">Disclaimer: </span>The following information is for public informational purposes only and is not reviewed by the site owners. Get Home Safe NYC and its parents assume no responsibility to parties receiving and using the information. By using this website you acknowledge this.</p>
+	</section>
 </div>

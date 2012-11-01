@@ -1,10 +1,10 @@
-<div class="location">
-  <p><%= @location.address %></p>
+<div class="location clearfix">
+  <p class="address"><%= @location.address %></p>
   <%= form_for(@location) do |f| %>
-  <p>  
+  <fieldset>  
     <%= f.label :safe %>
     <%= f.check_box :safe %>
-  </p>
+  </fieldset>
   <fieldset>  
     <%= f.label :power %>
     <%= f.check_box :power %>
@@ -21,12 +21,14 @@
     <%= f.label :flooding %>
     <%= f.check_box :flooding %>
   </fieldset>
-  <fieldset>
-  <label for="elivator_status">Are elevators working?</label>
-     <% [ 'yes', 'no', 'not applicable'].each do |elevator_status| %>
-         <br><%= radio_button_tag 'elevator_status', elevator_status, @elevator_status == elevator_status %>
-      <%= elevator_status.humanize %>
-      <% end %>
+  <fieldset class="elevator">
+  	<label for="elivator_status">Elevators working?</label>
+	<input id="elevator_status_yes" name="elevator_status" type="radio" value="yes">
+    <label class="radio">Yes</label>
+    <input id="elevator_status_no" name="elevator_status" type="radio" value="no">
+    <label class="radio">No</label>
+    <input id="elevator_status_not_applicable" name="elevator_status" type="radio" value="not applicable">
+    <label class="radio">Not Applicable</label>
   </fieldset>
   <fieldset>
   <%= f.submit 'Submit' %>  
