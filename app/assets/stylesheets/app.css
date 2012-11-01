@@ -11,7 +11,6 @@ body {
 	margin: 0;
 	font-size: 24px;
 	line-height: 90%;
-	min-width: 960px;
 	background-color: #eeeff3;
 }
 
@@ -470,6 +469,31 @@ footer ul li a:hover {
 	text-decoration: none;
 	color: #fff;
 }
+
+@media (max-width: 979px) {
+	.navigation ul{
+		width: 100%;
+	}
+	
+	.search { float: left; padding: 10px 0; width: 100%; border-top: #aaa 1px solid; }
+	.search form { padding: 0 20px; }
+	
+	.sidebar {
+		border: none;
+	}
+	
+	.content {
+		float: none;
+		width: auto;
+	}
+	
+	.content table {
+		padding: 0;
+		width: 100%;
+	}
+}
+
+
 /*
 @media screen and (max-width: 768px) {
 	
