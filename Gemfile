@@ -16,6 +16,7 @@ group :test do
   gem 'database_cleaner'
   gem 'vcr'
   gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
@@ -25,6 +26,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'debugger'
 end
 
 group :production do
