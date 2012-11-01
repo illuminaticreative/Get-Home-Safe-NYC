@@ -12,20 +12,17 @@
 	</table>
 	<table>
 		<tbody>
-			<tr class="odd">
-				<td class="safety not_safe"><img src="images/notsafe.svg"/></td>			
-				<td class="address"><a href="#">300 E 56th St. New York, NY 10022</a></td>
-				<td class="updated">Oct. 31, 12:00pm</td>
+      <% if @locations.present? %>
+        <% @locations.each do |location| %>
+        <tr class="<%= cycle("odd", "even") %>">
+        <td class="safety <%=is_safe(location)%>"><img src="images/<%=is_safe(location)%>.svg"/></td>			
+        <td class="address"><a href="#"><%= location.address %></a></td>
+        <td class="updated"><%= location.updated_at %></td>
 				<td class="facebook">FB</td>
 				<td class="twitter">TW</td>
 			</tr>
-			<tr class="even">
-				<td class="safety not_safe"><img src="images/safe.svg"/></td>			
-				<td class="address"><a href="#">300 E 56th St. New York, NY 10022</a></td>
-				<td class="updated">Oct. 31, 12:00pm</td>
-				<td class="facebook">FB</td>
-				<td class="twitter">TW</td>
-			</tr>
+        <% end %>
+      <% end %>
 		</tbody>
 	</table>
 </div>
