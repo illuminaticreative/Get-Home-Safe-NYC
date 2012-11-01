@@ -1,0 +1,36 @@
+<div class="boroughs">
+  <p><%= @location.address %></p>
+  <%= form_for(@location) do |f| %>
+  <p>  
+    <%= f.label :safe %>
+    <%= f.check_box :safe %>
+  </p>
+  <p>  
+    <%= f.label :power %>
+    <%= f.check_box :power %>
+  </p>
+  <p>  
+    <%= f.label :heat %>
+    <%= f.check_box :heat %>
+  </p>
+  <p>  
+    <%= f.label :water %>
+    <%= f.check_box :water %>
+  </p>
+  <p>  
+    <%= f.label :flooding %>
+    <%= f.check_box :flooding %>
+  </p>
+  <p>
+  <label for="elivator_status">Are elevators working?</label>
+     <% [ 'yes', 'no', 'not applicable'].each do |elevator_status| %>
+         <br><%= radio_button_tag 'elevator_status', elevator_status, @elevator_status == elevator_status %>
+      <%= elevator_status.humanize %>
+      <% end %>
+  </p>
+  <p>
+  <%= f.submit 'Submit' %>  
+  </p>
+
+<% end %>
+</div>

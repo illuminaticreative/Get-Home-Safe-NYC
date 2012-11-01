@@ -8,6 +8,10 @@ class LocationsController < ApplicationController
     @location = Location.new(borough_id:borough.id)
   end
 
+  def edit
+    @location = Location.find(params[:id])
+  end
+
   def show
     @location = Location.find(params[:id])
   end
