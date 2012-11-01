@@ -151,6 +151,11 @@ fieldset.elevator label.radio {
 	padding: 0;
 }
 
+fieldset .radios {
+	display: inline-block;
+}
+
+
 fieldset input {
 	display: inline-block;
 }
@@ -164,8 +169,8 @@ input[type="radio"] {
 }
 
 .location input[type="submit"] {
-	margin-top: 20px;
-	padding: 10px 40px;
+	margin: 20px 0 0 0;
+	padding: 10px 40px 10px 40px;
 }
 
 /*Search*/	
@@ -270,13 +275,17 @@ td.twitter, th.twitter {
 
 div.address {
 	width: 100%;
-	background-color: #f7f7f9;
-	padding: 20px 0;
+	background-color: #f7f7f9;	
 }
 
 div.address p {
 	font-size:36px;
 	line-height: 42px;
+	padding: 20px;
+	border-top: 6px #000 solid;		
+	border-left: 6px #000 solid;
+	border-right: 6px #000 solid;	
+	margin: 0;	
 }
 
 .status {
@@ -470,7 +479,7 @@ footer ul li a:hover {
 	color: #fff;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 959px) {
 	.navigation ul{
 		width: 100%;
 	}
@@ -540,6 +549,7 @@ footer ul li a:hover {
 	}
 	
 	.navigation ul {
+		display: none;
 		margin: 0;
 		padding: 0;
 		width: 100%;
