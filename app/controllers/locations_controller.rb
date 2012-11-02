@@ -33,14 +33,14 @@ class LocationsController < ApplicationController
   def create
     location = Location.new(params[:location])
     @location = LocationCache.for_address location.address.chomp if location.address.present?
-    if !@location.nil? && new_record && @location.update_attributes(params[:location].except(:address))
+    if @location.address.blank?
+      flash.now[:error] = "Unable to find location."
+      render :action => 'new' and return
+    elsif new_record && @location.update_attributes(params[:location].except(:address))
       redirect_to @location and return 
     elsif !new_record
       flash[:notice] = "Location already exists."
       redirect_to @location
-    elsif @location.nil?
-      flash.now[:error] = "Unable to find location."
-      render :action => 'new'
     else
       render :action => 'new'
     end
@@ -57,7 +57,7 @@ class LocationsController < ApplicationController
   end
   private
   def new_record
-    @location.created_at > 1.minutes.ago 
+    @location.present? and @location.created_at > 1.minutes.ago 
   end
 
 end
