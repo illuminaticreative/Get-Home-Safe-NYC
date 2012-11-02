@@ -15,10 +15,11 @@ class LocationsController < ApplicationController
 
   def search
     address = params[:address]
-    location = Location.find_by_address(address)
-    #location = LocationCache.for_address address.chomp if address.present?
-    if location.present?
-      redirect_to location and return if location.present?
+    @locations = Location.where("address like ?", "%#{address}%")
+    if @locations.size > 1
+      render 'index' and return
+    elsif @locations.size == 1
+      redirect_to @locations.first and return
     else
       @locations = Location.all
       flash.now[:error] = "Unable to find location."
