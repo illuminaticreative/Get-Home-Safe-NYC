@@ -2,10 +2,10 @@
 
 Get Home Safe NYC App
 
-created by illuminati creative
+created by Illuminati Creative
 
 */
-body{padding:0;margin:0;font-size:24px;line-height:90%;background-color:#eeeff3;}
+body{padding:0;margin:0;font-size:24px;line-height:90%;background-color:#eeeff3;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
 h2{line-height:120%;margin-bottom:10px;}
 p{font-size:60%;}
