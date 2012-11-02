@@ -1,6 +1,8 @@
 class Location < ActiveRecord::Base
 
   attr_accessible :address, :borough_id, :latitude, :longitude, :verified, :borough, :safe, :power, :elevators_safe, :elevators_available, :heat, :water, :flooding
+  attr_accessor :newly_created
+
   belongs_to :borough
 
   validates_presence_of :address, :uniqueness => true
