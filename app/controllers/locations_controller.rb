@@ -48,10 +48,11 @@ class LocationsController < ApplicationController
 
   def update
     @location = Location.find(params[:id])
-    if @location.update_attributes(params[:location])
+    if @location.update_attributes(params[:location].except(:address))
       redirect_to @location
     else
-      render action: "edit", :notice  => "Unable to update location info."
+      flash.now[:error] = "Unable to update location info."
+      render action: "edit"
     end
   end
   private
