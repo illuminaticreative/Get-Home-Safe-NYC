@@ -28,14 +28,13 @@ class LocationsController < ApplicationController
   end
 
   def create
-    debugger
-    location = Location.new(address:params[:location])
+    location = Location.new(params[:location])
     @location = LocationCache.for_address location.address.chomp if location.address.present?
-    if @location != GeoEngine::NoAddress
-      @location.update_attributes(params[:location].except(:address))
-      redirect_to @location and return if @location.present?
+    if new_record && @location != GeoEngine::NoAddress && @location.update_attributes(params[:location].except(:address))
+      redirect_to @location and return 
     else
-      render :action => 'new'
+      debugger
+      render :action => 'new', :notice  => "Unable to save location."
     end
   end
 
@@ -44,8 +43,12 @@ class LocationsController < ApplicationController
     if @location.update_attributes(params[:location])
       redirect_to @location
     else
-      render action: "edit"
+      render action: "edit", :notice  => "Unable to update location info."
     end
+  end
+  private
+  def new_record
+    @location.created_at > 1.minutes.ago
   end
 
 end
