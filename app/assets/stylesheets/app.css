@@ -57,22 +57,25 @@ li {
 .content
 {
 	float: left;
-	padding: 20px 20px;
-	width: 600px;
+	padding: 0;
+	width: 640px;
 }
 
 .sidebar {
-	margin: 20px;
-	padding: 0 20px 20px 20px;
+	margin: 0;
 	min-height: 800px;
 	height: 100%;
-	width: 250px;
+	width: 330px;
 	float: left;
 	border-left: 1px solid #ccc;
 }
 
+.sidebar .wrap{
+	padding: 20px;
+}
+
 .sidebar section {
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 }
 
 section.about p { color: #aaa; }
@@ -80,10 +83,13 @@ section.disclaimer p { color: #aaa; font-size: 50%; }
 section.disclaimer p .propmpt { color: #000; }
 
 
-.prompt {
+.prompt, .disclaimer .prompt{
+	font-size: 100%;
 	color: #000;
 	font-weight: bold;
 }
+
+
 
 ul.resources {
 	margin: 0 0 0 -5px;
@@ -176,7 +182,7 @@ input[type="radio"] {
 
 .search {
 	float: right;
-	margin-top: 4px;
+	margin: 4px 0 8px 0;
 	padding-right: 10px;
 	width: 270px;
 }
@@ -200,7 +206,7 @@ button {
 
 table {
 	width: 100%;
-	border: 1px #ccc solid;
+	border-bottom: 1px #ccc solid;
 }
 .basic_info td {
 	display: inline-block;
@@ -265,7 +271,7 @@ td.updated, th.updated {
 
 div.address {
 	width: 100%;
-	background-color: #f7f7f9;	
+	background-color: #f7f7f9;
 }
 
 div.address p {
@@ -286,10 +292,15 @@ div.address p {
 
 .status.notsafe {
 	background-color: #c90000;
+	border-left: 6px #000 solid;
+	border-right: 6px #000 solid;
 }
 
 .status.safe {
 	background-color: #289600;
+	width: auto;
+	border-left: 6px #000 solid;
+	border-right: 6px #000 solid;
 }
 
 .status h2 {
@@ -470,6 +481,10 @@ footer ul li a:hover {
 }
 
 @media (max-width: 959px) {
+	.title {
+		margin: 0;
+	}
+	
 	.navigation ul{
 		width: 100%;
 	}
@@ -482,12 +497,16 @@ footer ul li a:hover {
 		padding: 0;
 	}
 	
+	.prompt {
+		font-size: 180%;
+	}
+	
 	table {
 		border: none;
 		border-bottom: 1px #ccc solid;
 	}
 	
-	.search { float: left; padding: 10px 0; width: 100%; border-top: #aaa 1px solid; }
+	.search { float: left; margin: 0; padding: 10px 0; width: 100%; border-top: #aaa 1px solid; }
 	.search form { padding: 0 20px; }
 	
 	.sidebar {
@@ -524,7 +543,6 @@ footer ul li a:hover {
 	}
 	
 	.sidebar section {
-		padding: 0;
 		width: 100%;
 		float: left;
 	}
@@ -596,12 +614,9 @@ footer ul li a:hover {
 	}
 	
 	.sidebar {
-		padding: 0;
 		min-height: inherit;
 		position: relative;
 	}
-	
-	.sidebar {}
 	
 	.title {
 		font-size: 125%;

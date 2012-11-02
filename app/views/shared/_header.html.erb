@@ -1,14 +1,6 @@
 <header>
 	<h1 class="title"><%= link_to "Get Home Safe NYC", :controller => :locations, :action => :index %></a></h1>
 	<div class="navigation clearfix">
-		<ul>
-			<li class="all"><%= link_to "All NYC", :controller => :locations, :action => :index %></li>
-			<li class="manhattan"><a href="#">Manhattan</a></li>
-			<li class="bronx"><a href="#">Bronx</a></li>
-			<li class="queens"><a href="#">Queens</a></li>
-			<li class="brooklyn"><a href="#">Brooklyn</a></li>
-			<li class="staten_island"><a href="#">Staten Island</a></li>
-		</ul>
 		<div class="search">
       		<%= form_tag('/search', :class =>'form-search') %>
         		<input type="text" name="address" id="address" autofocus class="input-medium search-query" placeholder="Search...">
