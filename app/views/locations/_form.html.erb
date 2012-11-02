@@ -2,6 +2,7 @@
   <p class="address"><%= @location.address %></p>
   <%= form_for(@location) do |f| %>
   <fieldset>  
+    <label for="safe">Residence is safe?</label>
     <%= f.label :address %>
     <%= f.text_field :address %>
   </fieldset>
@@ -10,29 +11,31 @@
     <%= f.check_box :safe %>
   </fieldset>
   <fieldset>  
-    <%= f.label :power %>
+    <label for="power">Residence has power?</label>
     <%= f.check_box :power %>
   </fieldset>
   <fieldset>  
-    <%= f.label :heat %>
+    <label for="heat">Residence has heat?</label>
     <%= f.check_box :heat %>
   </fieldset>
   <fieldset>  
-    <%= f.label :water %>
+    <label for="water">Residence has water?</label>
     <%= f.check_box :water %>
   </fieldset>
   <fieldset>  
-    <%= f.label :flooding %>
+    <label for="flooding">Residence is flooded?</label>
     <%= f.check_box :flooding %>
   </fieldset>
   <fieldset class="elevator">
-  	<label for="elivator_status">Elevators working?</label>
-	<input id="elevator_status_yes" name="elevator_status" type="radio" value="yes">
-    <label class="radio">Yes</label>
-    <input id="elevator_status_no" name="elevator_status" type="radio" value="no">
-    <label class="radio">No</label>
-    <input id="elevator_status_not_applicable" name="elevator_status" type="radio" value="not applicable">
-    <label class="radio">Not Applicable</label>
+  	<label for="elivator_status">Elevators are working?</label>
+	<div class="radios">
+		<input id="elevator_status_yes" name="elevator_status" type="radio" value="yes">
+	    <label class="radio">Yes</label>
+	    <input id="elevator_status_no" name="elevator_status" type="radio" value="no">
+	    <label class="radio">No</label>
+	    <input id="elevator_status_not_applicable" name="elevator_status" type="radio" value="not applicable" checked="yes">
+	    <label class="radio">Not Applicable</label>
+	</div>
   </fieldset>
   <fieldset>
   <%= f.submit 'Submit' %>  
