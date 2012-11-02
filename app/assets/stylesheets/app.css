@@ -32,6 +32,7 @@ section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
 
 p.error { color: #c90000; border: 8px #c90000 solid; padding: 10px; font-weight: bold; margin: 0; }
+p.notice { color: #eea700; border: 8px #eea700 solid; padding: 10px; font-weight: bold; margin: 0; }
 
 .prompt,.disclaimer .prompt{font-size:100%;color:#000;font-weight:bold;}
 ul.resources{margin:0 0 0 -5px;padding:0;}
