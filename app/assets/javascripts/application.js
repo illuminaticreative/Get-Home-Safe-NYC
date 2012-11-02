@@ -13,3 +13,28 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() 
+{	          
+	$('input[type="radio"]').change(function() {
+
+
+			if( $(this).attr('id')=="elevator_status_yes" || $(this).attr('id')=="elevator_status_no")
+			{
+				$('[name="location[elevators_available]"]').attr('value', 1);
+				if($(this).attr('id')=="elevator_status_yes")
+				{
+					$('[name="location[elevators_safe]"]').attr('value', 1);
+				}
+				else
+				{
+					$('[name="location[elevators_safe]"]').attr('value', 0);					
+				}			
+			}
+			else
+			{
+				$('[name="location[elevators_available]"]').attr('value', 0);
+				$('[name="location[elevators_safe]"]').attr('value', 0);
+			}
+	});
+});
