@@ -292,6 +292,7 @@ div.address p {
 
 .status.notsafe {
 	background-color: #c90000;
+	width: auto;
 	border-left: 6px #000 solid;
 	border-right: 6px #000 solid;
 }
