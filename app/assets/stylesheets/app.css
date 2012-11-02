@@ -183,4 +183,5 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.sidebar h2 {font-size: 80%;}
 	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
 	.statuses li a { font-size: 12px;}
+	fieldset div { margin-top: 10px; }
 }
