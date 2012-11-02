@@ -10,9 +10,9 @@
 			<li class="staten_island"><a href="#">Staten Island</a></li>
 		</ul>
 		<div class="search">
-      <%= form_tag('/search') %>
-        <input type="text" name="address" id="address" autofocus class="input-medium search-query" placeholder="Search...">
-			  <button type="submit" class="btn">Search</button>
+      		<%= form_tag('/search', :class =>'form-search') %>
+        		<input type="text" name="address" id="address" autofocus class="input-medium search-query" placeholder="Search...">
+			  	<button type="submit" class="btn">Search</button>
 			</form>
 		</div>
 	</div>
