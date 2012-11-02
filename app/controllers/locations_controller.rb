@@ -21,6 +21,7 @@ class LocationsController < ApplicationController
       redirect_to location and return if location.present?
     else
       @locations = Location.all
+      flash.now[:error] = "Unable to find location."
       render 'index'
     end
   end
@@ -32,10 +33,16 @@ class LocationsController < ApplicationController
   def create
     location = Location.new(params[:location])
     @location = LocationCache.for_address location.address.chomp if location.address.present?
-    if new_record && @location != GeoEngine::NoAddress && @location.update_attributes(params[:location].except(:address))
+    if !@location.nil? && new_record && @location.update_attributes(params[:location].except(:address))
       redirect_to @location and return 
+    elsif !new_record
+      flash[:notice] = "Location already exists."
+      redirect_to @location
+    elsif @location.nil?
+      flash.now[:error] = "Unable to find location."
+      render :action => 'new'
     else
-      render :action => 'new', :notice  => "Unable to save location."
+      render :action => 'new'
     end
   end
 
@@ -49,7 +56,7 @@ class LocationsController < ApplicationController
   end
   private
   def new_record
-    @location.created_at > 1.minutes.ago
+    @location.created_at > 1.minutes.ago 
   end
 
 end
