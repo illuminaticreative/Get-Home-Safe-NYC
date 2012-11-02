@@ -1,25 +1,28 @@
-<div class="content">
-	<section class="single">
-		<div class="address clearfix">
-			<div class="status <%=is_safe(@location)%> clearfix">
-				<h2><%=safe_label(@location)%></h2>
-				<h3 class="update"><%= @location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></h3>
-			</div>
-			<p><%= @location.address %></p>
+<section class="single">
+	<div class="address clearfix">
+		<div class="status <%=is_safe(@location)%> clearfix">
+			<h2><%=safe_label(@location)%></h2>
+			<h3 class="update"><%= @location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></h3>
 		</div>
-		<ul class="statuses clearfix">
-			<li>Power: <span class="bold <%= @location.power ? "on" : "off" %>"><%= @location.power ? "On" : "Off" %></span></li>
-			<li>Water: <span class="bold <%= @location.water ? "on" : "off" %>"><%= @location.water ? "On" : "Off" %></span></li>
-			<li>Heat: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.heat ? "On" : "Off" %></span></li>
-			<% if @location.flooding %><li>Flooded</li><% end %>
-			<% if @location.elevators_available %><li><%= @location.elevators_safe ? "Elevators Working" : "Elevators Not Working" %></li><% end %>
-		</ul>
-		<ul class="utility">
-			<li><%= link_to "Update this building's status »", edit_location_path(@location) %></li>
-		</ul>
-		<!--<ul class="social">
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Twitter</a></li>						
-		</ul>-->
-	</section>
-</div>
+		<p><%= @location.address %></p>
+	</div>
+	<ul class="statuses clearfix">
+		<li>Power: <span class="bold <%= @location.power ? "on" : "off" %>"><%= @location.power ? "On" : "Off" %></span></li>
+		<li>Water: <span class="bold <%= @location.water ? "on" : "off" %>"><%= @location.water ? "On" : "Off" %></span></li>
+		<li>Heat: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.heat ? "On" : "Off" %></span></li>
+		<li>Flooding: <span class="bold <%= !@location.flooding ? "on" : "off" %>"><%= @location.flooding ? "YES" : "NO" %></span></li>
+		<% if @location.elevators_available %><li>Elevators: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.elevators_safe ? "YES" : "NO" %></span></li><% end %>
+	</ul>
+	<ul class="social clearfix">
+		<li><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgethomesafenyc.com%3Alocations%3A<%= @location.id %>&amp;send=false&amp;layout=button_count&amp;width=74&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=135962049879310" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:74px; height:21px;" allowTransparency="true"></iframe></li>
+			<li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gethomesafenyc.com/locations/<%= @location.id %>" data-text="Help your fellow New Yorkers!" data-hashtags="gethomesafenyc">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+	</ul>
+	<ul class="utility">
+		<li><%= link_to "Update this building's status »", edit_location_path(@location) %></li>
+	</ul>
+	<!--<ul class="social">
+		<li><a href="#">Facebook</a></li>
+		<li><a href="#">Twitter</a></li>						
+	</ul>-->
+</section>

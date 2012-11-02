@@ -31,8 +31,8 @@ section.about p{color:#aaa;}
 section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
 
-p.error { color: #c90000; border: 8px #c90000 solid; padding: 10px; font-weight: bold; margin: 0; }
-p.notice { color: #eea700; border: 8px #eea700 solid; padding: 10px; font-weight: bold; margin: 0; }
+p.error { color: #c90000; border: 6px #c90000 solid; padding: 4px 10px; font-weight: bold; margin: 0; }
+p.notice { color: #eea700; border: 6px #eea700 solid; padding: 4px 10px; font-weight: bold; margin: 0; }
 
 .prompt,.disclaimer .prompt{font-size:100%;color:#000;font-weight:bold;}
 ul.resources{margin:0 0 0 -5px;padding:0;}
@@ -86,8 +86,8 @@ div.address p{font-size:36px;line-height:42px;padding:20px;border-top:6px #000 s
 .status h2{color:#fff;padding:12px 20px;}
 .status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
 h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
-.statuses{margin:0;background-color:#000;display:block;width:100%;}
-.statuses li{font-size:60%;margin:0;float:left;padding:14px; color: #fff; }
+.statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0;}
+.statuses li{font-size:60%;margin:5px 0;float:left;padding:0px 0px 0px 20px; color: #fff; }
 .statuses li .on{color:#289600; padding: 0;}
 .statuses li .off{color:#c90000;background-color: transparent;  padding: 0;}
 
@@ -107,6 +107,7 @@ h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:rig
 
 
 /*Social Nav*/
+.single ul.social { margin: 10px 20px; width: 250px; float: left; }
 ul.social{float:left;margin:0px 0 0 20px;width:auto;}
 ul.social li{float:left; margin: 0 10px 0 0;}
 ul.social li a{font-size:14px;padding:0px;}
@@ -126,7 +127,7 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 
 @media (max-width: 959px) {
 	.title{margin:0;}
-	.navigation{display:block;}
+	.navigation{display:block;border: none;}
 	.navigation ul{width:100%;}
 	.container{width:100%;}
 	.content{padding:0;}
@@ -169,6 +170,8 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.navigation li{background-color:#fff;display:block;margin:0;border-bottom:1px #aaa solid;}
 	.navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 10px 14px 10px;}
 	.search{margin-top:-1px;}
+	ul.utility{margin:10px 0 0 20px;float:left;}
+	ul.utility li{ margin: 0;}
 	.sidebar{min-height:inherit;position:relative;}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar .search{display:none;}
@@ -186,5 +189,6 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.sidebar h2 {font-size: 80%;}
 	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
 	.statuses li a { font-size: 12px;}
+	ul.utility{margin:10px 0 0 10px;float:left;}
 	fieldset div { margin-top: 10px; }
 }

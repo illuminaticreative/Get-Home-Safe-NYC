@@ -69,18 +69,20 @@ var _gaq = _gaq || [];
 </head>
 <body>
 	<div class="container clearfix">
-<%= render "shared/header" %>
-<div id="container">
-  <% if flash[:notice] %>
-    <p class="notice"><%= flash[:notice] %></p>
-<% end %>
-  <% if flash[:error] %>
-    <p class="error"><%= flash[:error] %></p>
-<% end %> 
-</div>
-<%= yield %>
-<%= render "shared/right_info" %>
-<%= render "shared/footer" %>
+	<%= render "shared/header" %>
+		<div class="content clearfix">
+			<div id="flash">
+		  	<% if flash[:notice] %>
+			    <p class="notice"><%= flash[:notice] %></p>
+			<% end %>
+			<% if flash[:error] %>
+			    <p class="error"><%= flash[:error] %></p>
+			<% end %>
+		</div>
+		<%= yield %>
+	</div>
+	<%= render "shared/right_info" %>
+	<%= render "shared/footer" %>
 	</div>
 </body>
 </html>
