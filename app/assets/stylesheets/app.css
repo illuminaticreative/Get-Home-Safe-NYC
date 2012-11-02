@@ -103,7 +103,6 @@ ul.resources {
 	height: 20px;
 }
 
-
 .listings {
 	padding: 125px 20px 20px 20px;
 	margin-left: 323px;
@@ -239,6 +238,7 @@ td {
 
 td.safety, th.safety {
 	width: 10%;
+	text-align: center;
 }
 
 td.safety {
@@ -253,16 +253,6 @@ td.updated, th.updated {
 	width: 20%;
 	font-size: 50%;
 	text-align: left;
-}
-
-td.facebook, th.facebook {
-	width: 20px;
-	text-align: center;	
-}
-
-td.twitter, th.twitter {
-	width: 20px;
-	text-align: center;	
 }
 
 /*Individual Page*/
@@ -484,11 +474,25 @@ footer ul li a:hover {
 		width: 100%;
 	}
 	
+	.container {
+		width: 100%;
+	}
+	
+	.content {
+		padding: 0;
+	}
+	
+	table {
+		border: none;
+		border-bottom: 1px #ccc solid;
+	}
+	
 	.search { float: left; padding: 10px 0; width: 100%; border-top: #aaa 1px solid; }
 	.search form { padding: 0 20px; }
 	
 	.sidebar {
 		border: none;
+		width: auto;
 	}
 	
 	.content {
@@ -514,9 +518,15 @@ footer ul li a:hover {
 		font-size: 200%;
 	}
 	
+	table {
+		border: none;
+		border-bottom: 1px #ccc solid;
+	}
+	
 	.sidebar section {
 		padding: 0;
 		width: 100%;
+		float: left;
 	}
 	
 	.illcreative a {
@@ -535,7 +545,7 @@ footer ul li a:hover {
 	.boroughs ul {
 		width: 90%;
 		margin: 10px auto 0 auto;
-	}	
+	}
 }
 
 @media (max-width: 536px) {
@@ -546,6 +556,16 @@ footer ul li a:hover {
 		margin: 0 auto;
 		padding: 0;
 		width: 100%;
+	}
+	
+	.content {
+		padding: 0;
+		border: none;
+	}
+	
+	table {
+		border: none;
+		border-bottom: 1px #ccc solid;
 	}
 	
 	.navigation ul {
