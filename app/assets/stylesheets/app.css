@@ -19,12 +19,14 @@ span.bold { font-weight: bold; }
 
 .container{padding:0;margin:0;width:980px;margin:0 auto;background-color:#fff;-moz-box-shadow:0px 0px 4px #bebfc2;-webkit-box-shadow:0px 0px 4px #bebfc2;box-shadow:0px 0px 4px #bebfc2;}
 .content{float:left;padding:0;width:640px;}
+
+/* Sidebar */
 .sidebar{margin:0;min-height:800px;height:100%;width:330px;float:left;border-left:1px solid #ccc; }
 .sidebar .wrap{padding:20px;}
-.sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #eeeff3; }
+.sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #dbdce0; }
 .sidebar section{margin-bottom:30px;}
 .sidebar h2{font-size: 80%;}
-.sidebar a.update_link { margin-top: 10px; font-size: 120%; display: inline-block;}
+.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block;}
 section.about p{color:#aaa;}
 section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
@@ -37,7 +39,7 @@ ul.resources{margin:0 0 0 -5px;padding:0;}
 .illcreative a{background-image:url(illuminati_logo.png) ;display:block;text-indent:-9999em;overflow:hidden;width:80px;height:20px;}
 .listings{padding:125px 20px 20px 20px;margin-left:323px;width:65%;}
 .location{clear:both;padding:0px;}
-.location p{font-size:100%; padding: 20px;}
+.location p{font-size:100%; line-height: 120%; padding: 20px;}
 .form-search input{height:20px;margin:4px 0 0 0;width:65%;}
 .form-search{margin:0;}
 .location form{margin:0;background-color:#f7f7f9;padding:20px;}
@@ -55,7 +57,7 @@ fieldset input[type="radio"]{}
 .location input[type="submit"],.location input[type="button"]{margin:20px 5px 0 0;padding:10px 40px 10px 40px;}
 
 /*Search*/ 
-.search{float:right;margin:4px 0 8px 0;padding-right:10px;width:270px;background-color:#eeeff3; border: none; }
+.search{float:right;margin:4px 0 8px 0;padding-right:10px;width:270px;background-color:#dbdce0; border: none; }
 .search form{ padding: 0; margin:0;}
 .search input[type="text"] {margin:0;}
  button{height:30px;margin-top:0px;width:28%;float:right;}

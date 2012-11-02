@@ -15,7 +15,7 @@
 			<% if @location.elevators_available %><li><%= @location.elevators_safe ? "Elevators Working" : "Elevators Not Working" %></li><% end %>
 		</ul>
 		<ul class="utility">
-			<li><%= link_to "Edit this Address »", edit_location_path(@location) %></li>
+			<li><%= link_to "Update this building's status »", edit_location_path(@location) %></li>
 		</ul>
 		<!--<ul class="social">
 			<li><a href="#">Facebook</a></li>

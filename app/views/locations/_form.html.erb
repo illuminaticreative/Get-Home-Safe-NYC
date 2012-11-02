@@ -1,5 +1,7 @@
 <div class="location clearfix">
-  <% if @location.address %><p class="address"><%= @location.address %></p><% end %>
+  <% if @location.address %>
+  <p class="address"><%= @location.address %>
+  </p><% end %>
   <%= form_for(@location) do |f| %>
   <% if !@location.address %>
   <fieldset class="address">  
