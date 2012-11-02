@@ -7,5 +7,5 @@ queens = Borough.create(name:"queens")
 brooklyn = Borough.create(name:"brooklyn")
 staten = Borough.create(name:"staten_island")
 
-Location.create(address:"45 Rockefeller Plz", borough:manhattan)
+#Location.create(address:"45 Rockefeller Plz", borough:manhattan)
 Location.create(address:"300 E 56th St.", borough:manhattan, safe:true)

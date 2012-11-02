@@ -1,8 +1,3 @@
-<div class="boroughs">
-<%= form_for(@location) do |f| %>
-  <p>
-    <%= f.text_field :address %>
-    <%= f.submit 'Search Locations' %>
-  </p>
-<% end %>
+<div class="content">
+   <%= render :partial => "form", :locals => { :display_address => true } %>    
 </div>
