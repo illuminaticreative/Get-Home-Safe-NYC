@@ -103,8 +103,8 @@ h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:rig
 
 
 /*Social Nav*/
-ul.social{float:right;margin:0px 10px 0 0;width:auto;}
-ul.social li{float:left;}
+ul.social{float:left;margin:0px 0 0 20px;width:auto;}
+ul.social li{float:left; margin: 0 10px 0 0;}
 ul.social li a{font-size:14px;padding:0px;}
 ul.social li a:hover{color:#fff;text-decoration:none;}
 
@@ -114,8 +114,8 @@ ul.utility li{margin-left:20px;float:left;font-size:60%;}
 
 /*Footer*/
 footer { clear: both; display: block; background-color: #000; padding: 20px 0 16px; }
-footer ul.footer-nav{width:auto;float:left;}
-footer ul li{float:left;font-size:12px;color:#aaa;margin-right:20px;}
+footer ul.footer-nav{width:auto;float:right;margin-right: 20px; }
+footer ul li{float:left;font-size:12px;color:#aaa;margin-left:20px;}
 footer ul li a{color:#aaa;}
 footer ul li a:hover{text-decoration:none;color:#fff;}
 
@@ -172,6 +172,8 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	footer ul.footer-nav{width:auto;float:none;margin-left:18px;}
 	ul.social{float:none;margin:20px 10px 0 20px;width:auto;}
 	td.updated,th.updated{display:none;}
+	
+	footer ul.footer-nav{width:auto;margin: 20px auto; }
 
 }
 
