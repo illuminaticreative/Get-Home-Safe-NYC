@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121101154441) do
+ActiveRecord::Schema.define(:version => 20121102010347) do
 
   create_table "boroughs", :force => true do |t|
     t.string   "name"
@@ -31,9 +31,9 @@ ActiveRecord::Schema.define(:version => 20121101154441) do
     t.boolean  "water"
     t.boolean  "flooding"
     t.boolean  "elevators_available"
-    t.boolean  "elevators_operational"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
+    t.boolean  "elevators_safe"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
   end
 
 end
