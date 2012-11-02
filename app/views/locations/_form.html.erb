@@ -2,6 +2,10 @@
   <p class="address"><%= @location.address %></p>
   <%= form_for(@location) do |f| %>
   <fieldset>  
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </fieldset>
+  <fieldset>  
     <%= f.label :safe %>
     <%= f.check_box :safe %>
   </fieldset>

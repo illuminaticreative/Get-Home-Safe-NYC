@@ -1,10 +1,10 @@
 class LocationCache
   def self.for_address(address)
     begin
-      Location.form_address(address)
+      Location.for_address(address)
     rescue Location::NoAddress
-      score = GeoLocate.for_address(address)
-      Location.save_address(address)
+      geo_address = GeoLocate.for_address(address)
+      Location.save_address(geo_address)
     end
   end
 end
