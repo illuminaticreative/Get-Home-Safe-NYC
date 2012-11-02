@@ -33,7 +33,6 @@ class LocationsController < ApplicationController
     if new_record && @location != GeoEngine::NoAddress && @location.update_attributes(params[:location].except(:address))
       redirect_to @location and return 
     else
-      debugger
       render :action => 'new', :notice  => "Unable to save location."
     end
   end
