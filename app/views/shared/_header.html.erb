@@ -2,8 +2,8 @@
 	<h1 class="title"><%= link_to "Get Home Safe NYC", :controller => :locations, :action => :index %></a></h1>
 	<div class="navigation clearfix">
 		<ul>
-			<li class="all"><a href="#">All NYC</a></li>
-			<li class="manhattan"><a href="locations/index?borough=manhattan">Manhattan</a></li>
+			<li class="all"><%= link_to "All NYC", :controller => :locations, :action => :index %></li>
+			<li class="manhattan"><a href="#">Manhattan</a></li>
 			<li class="bronx"><a href="#">Bronx</a></li>
 			<li class="queens"><a href="#">Queens</a></li>
 			<li class="brooklyn"><a href="#">Brooklyn</a></li>
