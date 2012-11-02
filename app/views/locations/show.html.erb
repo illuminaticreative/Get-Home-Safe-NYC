@@ -11,8 +11,8 @@
 			<li class="on">Power <%= @location.power ? "On" : "Off" %></li>
 			<li class="on">Water <%= @location.water ? "On" : "Off" %></li>
 			<li class="on">Heat <%= @location.heat ? "On" : "Off" %></li>
-			<li class="off">Flooding</li>
-			<li class="off">Elevators</li>						
+			<% if @location.flooding %><li class="on">Flooded</li><% end %>
+			
 		</ul>
 		<ul class="utility">
 			<li><%= link_to "Edit this Address »", edit_location_path(@location) %></li>
