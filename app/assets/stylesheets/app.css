@@ -174,9 +174,12 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	td.updated,th.updated{display:none;}
 	
 	footer ul.footer-nav{width:auto;margin: 20px auto; }
-
 }
 
 @media (max-width: 320px) {
+	.status h2 { font-size: 100%; display: inline; width: auto;}
+	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
 	.sidebar h2 {font-size: 80%;}
+	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
+	.statuses li a { font-size: 12px;}
 }
