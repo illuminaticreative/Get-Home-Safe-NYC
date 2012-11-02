@@ -15,12 +15,14 @@ class LocationsController < ApplicationController
 
   def search
     address = params[:address]
-    location = LocationCache.for_address address.chomp if address.present?
-    if location != GeoEngine::NoAddress
+    location = Location.find_by_address(address)
+    #location = LocationCache.for_address address.chomp if address.present?
+    if location.present?
       redirect_to location and return if location.present?
+    else
+      @locations = Location.all
+      render 'index'
     end
-    @locations = Location.all
-    render 'index'
   end
 
   def show
