@@ -2,636 +2,186 @@
 
 Get Home Safe NYC App
 
-created by illuminati creative
+created by Illuminati Creative
 
 */
+body{padding:0;margin:0;font-size:24px;line-height:90%;background-color:#eeeff3;-webkit-tap-highlight-color: rgba(0,0,0,0);}
 
-body {
-	padding: 0;
-	margin: 0;
-	font-size: 24px;
-	line-height: 90%;
-	background-color: #eeeff3;
-}
+h2{line-height:120%;margin-bottom:10px;}
+p{font-size:60%;}
+li{list-style:none;}
+span.bold { font-weight: bold; }
 
-.title {
-	background-color: #000;
-	color: #fff;
-	font-size: 225%;
-	letter-spacing: -.05em;
-	padding: 30px 0 30px 0;
-	width: 100%;
-	z-index: 100000;
-}
+/* Header */
+.title{background-color:#000;color:#fff;font-size:225%;letter-spacing:-.05em;padding:30px 0 30px 0;width:100%;z-index:100000;}
+.title a{padding:0 20px;}
+.title a,.title a:hover{color:#fff;text-decoration:none;}
 
-.title a
-{
-	padding: 0 20px;
-}
+.container{padding:0;margin:0;width:980px;margin:0 auto;background-color:#fff;-moz-box-shadow:0px 0px 4px #bebfc2;-webkit-box-shadow:0px 0px 4px #bebfc2;box-shadow:0px 0px 4px #bebfc2;}
+.content{float:left;padding:0;width:640px;}
+.sidebar{margin:0;min-height:800px;height:100%;width:330px;float:left;border-left:1px solid #ccc; }
+.sidebar .wrap{padding:20px;}
+.sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #eeeff3; }
+.sidebar section{margin-bottom:30px;}
+.sidebar h2{font-size: 80%;}
+.sidebar a.update_link { margin-top: 10px; font-size: 120%; display: inline-block;}
+section.about p{color:#aaa;}
+section.disclaimer p{color:#aaa;font-size:50%;}
+section.disclaimer p .propmpt{color:#000;}
 
-.title a, .title a:hover {
-	color: #fff;
-	text-decoration: none;
-}
+p.error { color: #c90000; border: 8px #c90000 solid; padding: 10px; font-weight: bold; margin: 0; }
 
-p {
-	font-size: 60%;
-}
+.prompt,.disclaimer .prompt{font-size:100%;color:#000;font-weight:bold;}
+ul.resources{margin:0 0 0 -5px;padding:0;}
+.resources li{font-size:60%;margin:5px;}
+.illcreative a{background-image:url(illuminati_logo.png) ;display:block;text-indent:-9999em;overflow:hidden;width:80px;height:20px;}
+.listings{padding:125px 20px 20px 20px;margin-left:323px;width:65%;}
+.location{clear:both;padding:0px;}
+.location p{font-size:100%; padding: 20px;}
+.form-search input{height:20px;margin:4px 0 0 0;width:65%;}
+.form-search{margin:0;}
+.location form{margin:0;background-color:#f7f7f9;padding:20px;}
+fieldset{margin-bottom:15px;font-size:60%;}
+fieldset label{font-size:120%;display:inline-block;width:200px;font-weight: bold;}
+fieldset input{display:inline-block;}
+fieldset input[type="radio"]{display:inline-block;}
 
+fieldset input[type="text"]{width: 100%;max-width: 400px;}
+fieldset.elevator label.radio{display:inline-block;width:auto;margin:0 20px 0 4px;padding:0;font-weight: normal;}
+fieldset.address label{ display: block; }
+fieldset .radios{display:inline-block;}
 
-li {
-	list-style: none;
-}
+fieldset input[type="radio"]{}
+.location input[type="submit"],.location input[type="button"]{margin:20px 5px 0 0;padding:10px 40px 10px 40px;}
 
-.container {
-	padding: 0;
-	margin: 0;
-	width: 980px;
-	margin: 0 auto;
-	background-color: #fff;
-	-moz-box-shadow: 0px 0px 4px #bebfc2;
-	-webkit-box-shadow: 0px 0px 4px #bebfc2;
-	box-shadow: 0px 0px 4px #bebfc2;
-}
-
-.content
-{
-	float: left;
-	padding: 0;
-	width: 640px;
-}
-
-.sidebar {
-	margin: 0;
-	min-height: 800px;
-	height: 100%;
-	width: 330px;
-	float: left;
-	border-left: 1px solid #ccc;
-}
-
-.sidebar .wrap{
-	padding: 20px;
-}
-
-.sidebar section {
-	margin-bottom: 30px;
-}
-
-section.about p { color: #aaa; }
-section.disclaimer p { color: #aaa; font-size: 50%; }
-section.disclaimer p .propmpt { color: #000; }
-
-
-.prompt, .disclaimer .prompt{
-	font-size: 100%;
-	color: #000;
-	font-weight: bold;
-}
-
-
-
-ul.resources {
-	margin: 0 0 0 -5px;
-	padding: 0;
-}
-.resources li {
-	font-size: 60%;
-	margin: 5px;
-}
-
-.illcreative a {
-	background-image: url(illuminati_logo.png) ;
-	display: block;
-	text-indent: -9999em;
-	overflow: hidden;
-	width: 80px;
-	height: 20px;
-}
-
-.listings {
-	padding: 125px 20px 20px 20px;
-	margin-left: 323px;
-	width: 65%;
-}
-
-.location {
-	clear: both;
-	padding: 10px;	
-}
-
-.location p {
-	font-size: 100%;
-}
-.form-search input {
-	height: 20px;
-	margin: 4px 0 0 0;
-	width: 65%;
-}
-
-.form-search {
-	margin: 0;
-}
-
-.location form {
-	margin: 20px 0;
-	background-color: #f7f7f9;
-	padding: 20px;
-}
-
-fieldset {
-	margin-bottom: 15px;
-}
-
-fieldset label {
-	font-size: 120%;
-	display: inline-block;
-	width: 200px;
-}
-
-fieldset.elevator label.radio {
-	display: inline-block;
-	width: auto;
-	margin: 0 20px 0 4px;
-	padding: 0;
-}
-
-fieldset .radios {
-	display: inline-block;
-}
-
-
-fieldset input {
-	display: inline-block;
-}
-
-fieldset {
-	font-size: 60%;
-}
-
-input[type="radio"] {
-	
-}
-
-.location input[type="submit"] {
-	margin: 20px 0 0 0;
-	padding: 10px 40px 10px 40px;
-}
-
-/*Search*/	
-
-.search {
-	float: right;
-	margin: 4px 0 8px 0;
-	padding-right: 10px;
-	width: 270px;
-}
-.search form {
-	
-}
-
-button {
-	height: 30px;
-	margin-top: 4px;
-	width: 28%;
-	float: right;
-}
-
-
-.single_listing {
-	margin: 30px auto 30px auto;
-}
+/*Search*/ 
+.search{float:right;margin:4px 0 8px 0;padding-right:10px;width:270px;background-color:#eeeff3; border: none; }
+.search form{ padding: 0; margin:0;}
+.search input[type="text"] {margin:0;}
+ button{height:30px;margin-top:0px;width:28%;float:right;}
+.single_listing{margin:30px auto 30px auto;}
 
 /*Table*/
-
-table {
-	width: 100%;
-	border-bottom: 1px #ccc solid;
-}
-.basic_info td {
-	display: inline-block;
-	text-align: center;
-	height: 50px;
-	width: 49%;
-	font-size: 110%;
-}
-
-table th {
-	color: #fff;
-	background-color: #000;	
-	font-size: 12px;
-	font-weight: bold;
-	margin: 0;
-	padding: 10px;
-	text-align: left;  
-}
-
-table tr, table thead, table tbody {
-	width: 100%;
-}
-
-tr.even {
-	background-color: #eeeff3;
-}
-
-td {
-	margin: 0;
-	padding: 10px;
-	display: inline-block;
-	font-size: 14px;
-	text-align: left;
-}
-
-td.safety, th.safety {
-	width: 10%;
-	text-align: center;
-}
-
-td.safety {
-	text-align: center;
-}
-
-td.address, th.address {
-	width: 55%;
-}
-
-td.updated, th.updated {
-	width: 20%;
-	font-size: 50%;
-	text-align: left;
-}
+table{width:100%;border-bottom:1px #ccc solid;}
+.basic_info td{display:inline-block;text-align:center;height:50px;width:49%;font-size:110%;}
+table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:10px;}
+table tr,table thead,table tbody{width:100%;}
+tr.even{background-color:#eeeff3;}
+td{margin:0;padding:10px;display:inline-block;font-size:14px;text-align:left;}
+td.safety,th.safety{width:10%;text-align:center;}
+td.safety{text-align:center;}
+td.address,th.address{width:55%;}
+td.updated,th.updated{width:20%;font-size:50%;text-align:left;}
 
 /*Individual Page*/
-.content h2 {
-	font-size: 150%;
-	float: left;
-	padding: 10px;
-	width: auto;
-}
-
-div.address {
-	width: 100%;
-	background-color: #f7f7f9;
-}
-
-div.address p {
-	font-size:36px;
-	line-height: 42px;
-	padding: 20px;
-	border-top: 6px #000 solid;		
-	border-left: 6px #000 solid;
-	border-right: 6px #000 solid;	
-	margin: 0;	
-}
-
-.status {
-	margin: 0 0 -1px 0;
-	width: 100%;	
-	background-color: #000;
-}
-
-.status.notsafe {
-	background-color: #c90000;
-	border-left: 6px #000 solid;
-	border-right: 6px #000 solid;
-}
-
-.status.safe {
-	background-color: #289600;
-	width: auto;
-	border-left: 6px #000 solid;
-	border-right: 6px #000 solid;
-}
-
-.status h2 {
-	color: #fff;
-	padding: 12px 20px;
-}
-
-h3.update {
-	padding: 24px 20px 0 0px;
-	color: #fff;
-	float:right;
-	width: auto;
-	text-align: left;
-	font-weight: normal;
-	font-size: 14px;
-}
-
-h2.not_safe {
-	background-color: #c90000;
-	border-top: double 15px;
-	color: #fff;
-	float: right;
-	margin-top: -5px;
-	width: 200px;
-	min-width: 0;
-}
-
-.statuses {
-	margin: 0;
-	background-color: #000;
-	display: block;
-	width: 100%;
-}
-
-.statuses li {
-	font-size: 60%;
-	margin: 0;
-	float: left;
-	padding: 14px
-}
-
-.on {
-	background-color: #000;
-	color: #fff;
-	padding: 10px 0 15px 10px;
-}
-
-.off {
-	background-color: #c90000;
-	color: #fff;
-	padding: 10px 0 15px 10px;
-
-}
-
+.content h2{font-size:150%;float:left;padding:10px 20px;width:auto;margin:0;}
+div.address{width:100%;background-color:#f7f7f9;}
+div.address p{font-size:36px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;}
+.status{margin:0 0 -1px 0;width:100%;background-color:#000;}
+.status.notsafe{background-color:#c90000;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
+.status.safe{background-color:#289600;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
+.status h2{color:#fff;padding:12px 20px;}
+.status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
+h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
+.statuses{margin:0;background-color:#000;display:block;width:100%;}
+.statuses li{font-size:60%;margin:0;float:left;padding:14px; color: #fff; }
+.statuses li .on{color:#289600; padding: 0;}
+.statuses li .off{color:#c90000;background-color: transparent;  padding: 0;}
 
 /*Boroughs*/
+.navigation{display:none;background-color:#fff;font-size:55%;padding:0;}
+.navigation ul{float:left;height:100%;margin:0;padding:0;width:64%;}
+.navigation li{background-color:#fff;display:inline-block;margin:0;}
+.navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 15px 14px 15px;}
+.navigation a:hover{color:#333;text-decoration:none;}
+.current a{color:#fff;}
+.all.current{background-color:#000;}
+.manhattan.current{background-color:#007dc7;}
+.queens.current{background-color:#289600;}
+.bronx.current{background-color:#e19e00;}
+.brooklyn.current{background-color:#da007e;}
+.staten_island.current{background-color:#632da9;}
 
-.navigation {
-	background-color: #fff;
-	border-bottom: 8px solid #000;
-	font-size: 55%;
-	padding: 0;
-}
-
-.navigation ul {
-	float: left;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	width: 64%;
-}
-
-.navigation li {
-	background-color: #fff;
-	display: inline-block;
-	margin: 0;
-}
-
-.navigation a {
-	display: block;
-	color: #aaa;
-	text-align: center;
-	font-weight: bold;
-	font-size: 13px;
-	padding: 15px 15px 14px 15px;
-}
-
-.navigation a:hover {
-	color: #333;
-	text-decoration: none;
-}
-
-.current a {
-	color: #fff;
-}
-
-.all.current {
-	background-color: #000;
-}
-.manhattan.current {
-	background-color: #007dc7;
-}
-.queens.current {
-	background-color: #289600;
-}
-.bronx.current {
-	background-color: #e19e00;
-}
-.brooklyn.current {
-	background-color: #da007e;
-}
-.staten_island.current {
-	background-color: #632da9;
-}
 
 /*Social Nav*/
-
-ul.social {
-	float: right;
-	margin: 0px 10px 0 0;
-	width: auto;
-}
-
-ul.social li {
-	float: left;
-}
-
-ul.social li a {
-	font-size: 14px;
-	padding: 0px;
-}
-
-ul.social li a:hover {
-	color: #fff;
-	text-decoration: none;
-}
+ul.social{float:left;margin:0px 0 0 20px;width:auto;}
+ul.social li{float:left; margin: 0 10px 0 0;}
+ul.social li a{font-size:14px;padding:0px;}
+ul.social li a:hover{color:#fff;text-decoration:none;}
 
 /*Utility Nav*/
-ul.utility {
-	margin: 10px 0 0 0;
-	float: right;
-}
-
-ul.utility li {
-	margin-left: 20px;
-	float: left;
-	font-size: 60%;
-}
+ul.utility{margin:10px 10px 0 0;float:right;}
+ul.utility li{margin-left:20px;float:left;font-size:60%;}
 
 /*Footer*/
+footer { clear: both; display: block; background-color: #000; padding: 20px 0 16px; }
+footer ul.footer-nav{width:auto;float:right;margin-right: 20px; }
+footer ul li{float:left;font-size:12px;color:#aaa;margin-left:20px;}
+footer ul li a{color:#aaa;}
+footer ul li a:hover{text-decoration:none;color:#fff;}
 
-footer {
-	clear: both;
-	display: block;
-	background-color: #000;
-	padding: 20px 0 16px;
-}
-
-footer ul.footer-nav {
-	width:auto;
-	float: left;
-}
-
-footer ul li {
-	float: left;
-	font-size: 12px;
-	color: #aaa;
-	margin-right: 20px;
-}
-
-footer ul li a {
-	color: #aaa;
-}
-
-footer ul li a:hover {
-	text-decoration: none;
-	color: #fff;
-}
 
 @media (max-width: 959px) {
-	.title {
-		margin: 0;
-	}
-	
-	.navigation ul{
-		width: 100%;
-	}
-	
-	.container {
-		width: 100%;
-	}
-	
-	.content {
-		padding: 0;
-	}
-	
-	table {
-		border: none;
-		border-bottom: 1px #ccc solid;
-	}
-	
-	.search { float: left; margin: 0; padding: 10px 0; width: 100%; border-top: #aaa 1px solid; }
-	.search form { padding: 0 20px; }
-	
-	.sidebar {
-		border: none;
-		width: auto;
-	}
-	
-	.content {
-		float: none;
-		width: auto;
-	}
-	
-	.content table {
-		padding: 0;
-		width: 100%;
-	}
+	.title{margin:0;}
+	.navigation{display:block;}
+	.navigation ul{width:100%;}
+	.container{width:100%;}
+	.content{padding:0;}
+	table{border:none;border-bottom:1px #ccc solid;}
+	.search{float:left;margin:0;padding:10px 0;width:100%;}
+	.search form{padding:0 20px;}
+	.sidebar{border:none;width:auto;}
+	.sidebar .wrap{margin-top:0px;}
+	.sidebar .search{display:none;}
+	.sidebar h2{font-size: 150%;}
+	.content{float:none;width:auto;}
+	.content table{padding:0;width:100%;}
 }
 
 
 
 @media (max-width: 767px) {
 	
-	body {
-		padding-right: 0;
-		padding-left: 0;		
-	}
-	.title {
-		font-size: 200%;
-	}
-	
-	table {
-		border: none;
-		border-bottom: 1px #ccc solid;
-	}
-	
-	.sidebar section {
-		width: 100%;
-		float: left;
-	}
-	
-	.illcreative a {
-		margin: 10px 0 0 20px;
-	}
-	
-	.boroughs {
-		padding: 0;
-		margin: 0 auto;
-		width: 90%;
-	}
-	
-	.boroughs h2 {
-		padding-left: 20px;
-	}
-	.boroughs ul {
-		width: 90%;
-		margin: 10px auto 0 auto;
-	}
+	body{padding-right:0;padding-left:0;}
+	.title{font-size:200%;}
+	table{border:none;border-bottom:1px #ccc solid;}
+	.sidebar .wrap{margin-top:0px;}
+	.sidebar section{width:100%;float:left;}
+	.sidebar .search{display:none;}
+	.illcreative a{margin:10px 0 0 20px;}
+	.boroughs{padding:0;margin:0 auto;width:90%;}
+	.boroughs h2{padding-left:20px;}
+	.boroughs ul{width:90%;margin:10px auto 0 auto;}
+
 }
 
 @media (max-width: 536px) {
-	body {
-		padding: 0;
-	}
-	.container {
-		margin: 0 auto;
-		padding: 0;
-		width: 100%;
-	}
+	body{padding:0;}
+	.title{font-size:125%;text-align:center;}
+	.container{margin:0 auto;padding:0;width:100%;}
+	.content{padding:0;border:none;}
+	table{border:none;border-bottom:1px #ccc solid;}
+	.navigation{display:block;}
+	.navigation ul{display:none;margin:0;padding:0;width:100%;}
+	.navigation li{background-color:#fff;display:block;margin:0;border-bottom:1px #aaa solid;}
+	.navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 10px 14px 10px;}
+	.search{margin-top:-1px;}
+	.sidebar{min-height:inherit;position:relative;}
+	.sidebar .wrap{margin-top:0px;}
+	.sidebar .search{display:none;}
+	.sidebar h2{font-size: 100%;}
+	footer ul.footer-nav{width:auto;float:none;margin-left:18px;}
+	ul.social{float:none;margin:20px 10px 0 20px;width:auto;}
+	td.updated,th.updated{display:none;}
 	
-	.content {
-		padding: 0;
-		border: none;
-	}
-	
-	table {
-		border: none;
-		border-bottom: 1px #ccc solid;
-	}
-	
-	.navigation ul {
-		display: none;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
+	footer ul.footer-nav{width:auto;margin: 20px auto; }
+}
 
-	.navigation li {
-		background-color: #fff;
-		display: block;
-		margin: 0;
-		border-bottom: 1px #aaa solid;
-	}
-
-	.navigation a {
-		display: block;
-		color: #aaa;
-		text-align: center;
-		font-weight: bold;
-		font-size: 13px;
-		padding: 15px 10px 14px 10px;
-	}
-	
-	.search {
-		margin-top: -1px;
-	}
-	
-	.sidebar {
-		min-height: inherit;
-		position: relative;
-	}
-	
-	.title {
-		font-size: 125%;
-		text-align: center;
-	}
-	
-	footer ul.footer-nav {
-		width: auto;
-		float: none;
-		margin-left: 18px;
-	}
-	
-	ul.social {
-		float: none;
-		margin: 20px 10px 0 20px;
-		width: auto;
-	}
-	
-	td.updated, th.updated {
-		display: none;
-	}
+@media (max-width: 320px) {
+	.status h2 { font-size: 100%; display: inline; width: auto;}
+	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
+	.sidebar h2 {font-size: 80%;}
+	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
+	.statuses li a { font-size: 12px;}
+	fieldset div { margin-top: 10px; }
 }

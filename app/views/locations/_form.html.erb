@@ -1,12 +1,14 @@
 <div class="location clearfix">
-  <p class="address"><%= @location.address %></p>
+  <% if @location.address %><p class="address"><%= @location.address %></p><% end %>
   <%= form_for(@location) do |f| %>
-  <fieldset>  
+  <% if !@location.address %>
+  <fieldset class="address">  
     <label for="address">Address</label>
     <%= f.text_field :address %>
   </fieldset>
+  <% end %>
   <fieldset>  
-    <%= f.label :safe %>
+    <label for="safe">Residence is safe?</label>
     <%= f.check_box :safe %>
   </fieldset>
   <fieldset>  
@@ -33,13 +35,19 @@
 	    <input id="elevator_status_no" name="elevator_status" type="radio" value="no">
 	    <label class="radio">No</label>
 	    <input id="elevator_status_not_applicable" name="elevator_status" type="radio" value="not applicable">
-	    <label class="radio">Not Applicable</label>
+	    <label class="radio">N/A</label>
 	</div>
   </fieldset>
   <fieldset>
   <input type="hidden" name="location[elevators_available]" value="0">
   <input type="hidden" name="location[elevators_safe]" value="0">
-  <%= f.submit 'Submit' %>  
+  
+  <% if @location.address %>
+  <%= f.submit 'Submit', :onclick => "return confirm('Are you sure you want to update this address?')" %>
+  <% else %>
+  <%= f.submit 'Submit', :onclick => "return confirm('Are you sure you want to add this address?')" %>
+  <% end %>
+  <a href="/"><input name="cancel" type="button" value="Cancel"></a>
   </fieldset>
 
 <% end %>
