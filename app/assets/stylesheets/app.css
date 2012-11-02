@@ -24,6 +24,7 @@ span.bold { font-weight: bold; }
 .sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #eeeff3; }
 .sidebar section{margin-bottom:30px;}
 .sidebar h2{font-size: 80%;}
+.sidebar a.update_link { margin-top: 10px; font-size: 120%; display: inline-block;}
 section.about p{color:#aaa;}
 section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
@@ -77,8 +78,8 @@ td.updated,th.updated{width:20%;font-size:50%;text-align:left;}
 div.address{width:100%;background-color:#f7f7f9;}
 div.address p{font-size:36px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;}
 .status{margin:0 0 -1px 0;width:100%;background-color:#000;}
-.status.notsafe{background-color:#c90000;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
-.status.safe{background-color:#289600;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
+.status.notsafe{background-color:#c90000;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
+.status.safe{background-color:#289600;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status h2{color:#fff;padding:12px 20px;}
 .status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
 h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
