@@ -29,8 +29,8 @@ span.bold { font-weight: bold; }
 .sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #dbdce0; }
 .sidebar section{margin-bottom:30px;}
 .sidebar h2{font-size: 80%;}
-.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #007dc7; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
--moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #005297;}
+.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #aaa; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
+-moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #555;}
 .sidebar a.update_link:hover { text-decoration: none; background: #007dc7; border-radius: 3px;text-shadow: 1px 1px #005297;}
 section.about p{color:#aaa;}
 section.disclaimer p{color:#aaa;font-size:50%;}
@@ -139,6 +139,7 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 .terms ol li { font-size: 12px; margin-bottom: 20px; list-style-type: decimal; }
 
 /*Terms*/
+.press h2 { display: block; width: 100%; }
 .press p { font-size: 14px; padding: 5px 20px; }
 
 @media (max-width: 959px) {
@@ -197,6 +198,8 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	td.updated,th.updated{display:none;}
 	
 	footer ul.footer-nav{width:auto;margin: 20px auto; }
+	.terms h2 { font-size: 100%; }
+	.press h2 { font-size: 100%; }
 }
 
 @media (max-width: 320px) {
@@ -210,4 +213,6 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.statuses li a { font-size: 12px;}
 	ul.utility{margin:10px 0 0 10px;float:left;}
 	fieldset div { margin-top: 10px; }
+	.terms h2 { font-size: 80%; }
+	.press h2 { font-size: 80%; }
 }
