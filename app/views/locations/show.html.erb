@@ -7,10 +7,10 @@
 		<p><%= @location.address %></p>
 	</div>
 	<ul class="statuses clearfix">
-		<li>Power: <span class="bold <%= @location.power ? "on" : "off" %>"><%= @location.power ? "Yes" : "No" %></span></li>
-		<li>Water: <span class="bold <%= @location.water ? "on" : "off" %>"><%= @location.water ? "Yes" : "No" %></span></li>
-		<li>Heat: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.heat ? "Yes" : "No" %></span></li>
-		<% if @location.elevators_available %><li>Elevators: <span class="bold <%= @location.elevators_safe ? "on" : "off" %>"><%= @location.elevators_safe ? "Yes" : "No" %></span></li><% end %>
+		<li><img src="/images/<%= @location.power ? "safe" : "notsafe"%>.svg"/><p>Power</p></li>
+		<li><img src="/images/<%= @location.water ? "safe" : "notsafe"%>.svg"/><p>Water</p></li>
+		<li><img src="/images/<%= @location.heat ? "safe" : "notsafe"%>.svg"/><p>Heat</p></li>
+		<% if @location.elevators_available %><li><img src="/images/<%= @location.elevators_safe ? "safe" : "notsafe"%>.svg"/><p>Elevators</p></li><% end %>
 	</ul>
 	<ul class="statuses clearfix">
 		<li>Flooding: <span class="bold <%= !@location.flooding ? "on" : "off" %>"><%= @location.flooding ? "Yes" : "No" %></span></li>

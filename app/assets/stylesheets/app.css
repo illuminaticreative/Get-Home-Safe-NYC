@@ -70,7 +70,7 @@ fieldset input[type="radio"]{}
 .single_listing{margin:30px auto 30px auto;}
 
 /*Table*/
-table{width:100%;border-bottom:1px #ccc solid;}
+table{width:100%;border-bottom:6px #000 solid;}
 .basic_info td{display:inline-block;text-align:center;height:50px;width:49%;font-size:110%;}
 table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:10px;}
 table tr,table thead,table tbody{width:100%;}
@@ -84,7 +84,7 @@ td.updated,th.updated{width:20%;font-size:50%;text-align:left;}
 /*Individual Page*/
 .content h2{font-size:150%;float:left;padding:10px 20px;width:auto;margin:0;}
 div.address{width:100%;background-color:#f7f7f9;}
-div.address p{font-size:36px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;}
+div.address p{font-size:18px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;}
 .status{margin:0 0 -1px 0;width:100%;background-color:#000;}
 .status.notsafe{background-color:#c90000;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status.safe{background-color:#289600;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
@@ -92,8 +92,9 @@ div.address p{font-size:36px;line-height:42px;padding:20px;border-top:6px #000 s
 .status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
 .status p { font-size: 12px; }
 h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
-.statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0;}
-.statuses li{font-size:60%;margin:5px 0;float:left;padding:0px 0px 0px 20px; color: #fff; }
+.statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0; margin: 0 auto; }
+.statuses li {font-size:60%;margin:5px 0;float:left;padding:0px 0px 0px 20px; color: #fff; text-align: center;}
+.statuses li p {padding: 4px 8px; font-size: 11px; }
 .statuses li .on{color:#289600; padding: 0;}
 .statuses li .off{color:#c90000;background-color: transparent;  padding: 0;}
 
@@ -148,7 +149,6 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.navigation ul{width:100%;}
 	.container{width:100%;}
 	.content{padding:0;}
-	table{border:none;border-bottom:1px #ccc solid;}
 	.search{float:left;margin:0;padding:10px 0;width:100%;}
 	.search form{padding:0 20px;}
 	.sidebar{border:none;width:auto;}
@@ -165,7 +165,6 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	
 	body{padding-right:0;padding-left:0;}
 	.title{font-size:200%;}
-	table{border:none;border-bottom:1px #ccc solid;}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar section{width:100%;float:left;}
 	.sidebar .search{display:none;}
@@ -178,10 +177,9 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 
 @media (max-width: 536px) {
 	body{padding:0;}
-	.title{font-size:125%;text-align:center;}
+	.title{font-size:130%;text-align:center;}
 	.container{margin:0 auto;padding:0;width:100%;}
 	.content{padding:0;border:none;}
-	table{border:none;border-bottom:1px #ccc solid;}
 	.navigation{display:block;}
 	.navigation ul{display:none;margin:0;padding:0;width:100%;}
 	.navigation li{background-color:#fff;display:block;margin:0;border-bottom:1px #aaa solid;}
@@ -205,13 +203,15 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 @media (max-width: 320px) {
 	body{padding:0;margin:0; }
 	.container{margin:0; padding:0; width:100%; overflow: hidden;}	
+	div.address p{font-size:14px;}
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
 	.sidebar h2 {font-size: 80%;}
 	.sidebar a.update_link { width: 280px; } 
 	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
 	.statuses li a { font-size: 12px;}
-	ul.utility{margin:10px 0 0 10px;float:left;}
+	ul.utility{margin:10px 0 0 20px;float:left;}
+	ul.utility li{ margin: 0;}
 	fieldset div { margin-top: 10px; }
 	.terms h2 { font-size: 80%; }
 	.press h2 { font-size: 80%; }
