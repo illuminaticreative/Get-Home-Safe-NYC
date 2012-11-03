@@ -164,7 +164,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	
 	body{padding-right:0;padding-left:0;}
 	.title{font-size:200%;}
-	.sidebar {border-top: 1px #aaa solid;margin-top: 20px}
+	.sidebar {margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar section{width:100%;float:left;}
 	.sidebar .search{display:none;}
@@ -187,7 +187,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.search{margin-top:-1px;}
 	ul.utility{margin:10px 0 0 20px;float:left;}
 	ul.utility li{ margin: 0;}
-	.sidebar{min-height:inherit;position:relative;border-top: 1px #aaa solid;margin-top: 20px}
+	.sidebar{min-height:inherit;position:relative;margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar .search{display:none;}
 	.sidebar h2{font-size: 100%;}
@@ -206,7 +206,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	div.address p{font-size:14px;}
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
-	.sidebar { border-top: 1px #aaa solid; margin-top: 20px}
+	.sidebar {  margin-top: 20px}
 	.sidebar h2 {font-size: 80%;}
 	.sidebar a.update_link { width: 280px; } 
 	.statuses li { margin-right: 0px; padding: 0 0 0 10px ; }
