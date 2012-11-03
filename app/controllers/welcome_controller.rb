@@ -8,4 +8,10 @@ class WelcomeController < ApplicationController
 
   def create
   end
+
+  def terms
+  end
+
+  def press
+  end
 end
