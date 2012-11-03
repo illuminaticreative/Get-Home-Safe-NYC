@@ -12,8 +12,7 @@ module LocationsHelper
   end
 
   def is_no
-    #(not @location.elevators_safe && @location.elevators_available) ? "checked" : ""
-    "checked"
+    (not @location.elevators_safe && @location.elevators_available) ? "checked" : ""
   end
 
   def is_na
