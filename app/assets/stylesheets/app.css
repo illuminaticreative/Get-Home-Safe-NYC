@@ -217,5 +217,5 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	fieldset div { margin-top: 10px; }
 	.terms h2 { font-size: 80%; }
 	.press h2 { font-size: 80%; }
-	td.address,th.address{width:75%;background: red;}
+	td.address,th.address{width:75%;}
 }
