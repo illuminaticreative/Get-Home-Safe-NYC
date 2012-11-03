@@ -20,11 +20,11 @@ span.bold { font-weight: bold; }
 .title a{padding:0 20px;}
 .title a,.title a:hover{color:#fff;text-decoration:none;}
 
-.container{padding:0;margin:0;width:980px;margin:0 auto;background-color:#fff;-moz-box-shadow:0px 0px 4px #bebfc2;-webkit-box-shadow:0px 0px 4px #bebfc2;box-shadow:0px 0px 4px #bebfc2;}
+.container{padding:0;margin:0;width:980px;margin:0 auto;background-color:#fff;-moz-box-shadow:0px 0px 4px #bebfc2;-webkit-box-shadow:0px 0px 4px #bebfc2;box-shadow:0px 0px 4px #bebfc2;overflow: hidden;}
 .content{float:left;padding:0;width:640px;}
 
 /* Sidebar */
-.sidebar{margin:0;height:100%;width:330px;float:left;border-left:1px solid #ccc; max-width: 620px; }
+.sidebar{margin:0;height:100%;width:330px;float:left;border-left:1px solid #ccc; max-width: 620px;margin-top: 0px}
 .sidebar .wrap{padding:20px;}
 .sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #dbdce0; }
 .sidebar section{margin-bottom:30px;}
@@ -150,7 +150,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.content{padding:0;}
 	.search{float:left;margin:0;padding:10px 0;width:100%;}
 	.search form{padding:0 20px;}
-	.sidebar{border:none;width:auto;}
+	.sidebar{border:none;width:auto;margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar .search{display:none;}
 	.sidebar h2{font-size: 150%;}
@@ -164,6 +164,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	
 	body{padding-right:0;padding-left:0;}
 	.title{font-size:200%;}
+	.sidebar {border-top: 1px #aaa solid;margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar section{width:100%;float:left;}
 	.sidebar .search{display:none;}
@@ -186,7 +187,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.search{margin-top:-1px;}
 	ul.utility{margin:10px 0 0 20px;float:left;}
 	ul.utility li{ margin: 0;}
-	.sidebar{min-height:inherit;position:relative;}
+	.sidebar{min-height:inherit;position:relative;border-top: 1px #aaa solid;margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar .search{display:none;}
 	.sidebar h2{font-size: 100%;}
@@ -205,6 +206,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	div.address p{font-size:14px;}
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
+	.sidebar { border-top: 1px #aaa solid; margin-top: 20px}
 	.sidebar h2 {font-size: 80%;}
 	.sidebar a.update_link { width: 280px; } 
 	.statuses li { margin-right: 0px; padding: 0 0 0 10px ; }
