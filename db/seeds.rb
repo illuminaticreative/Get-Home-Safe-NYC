@@ -8,6 +8,8 @@ queens = Borough.create(name:"queens")
 brooklyn = Borough.create(name:"brooklyn")
 staten = Borough.create(name:"staten_island")
 
+100.times{ Location.create(address:"#{rand(1000)} E. 5th St.") }
+
 Zip.create(zipcode:"10451")
 Zip.create(zipcode:"10452")
 Zip.create(zipcode:"10453")
