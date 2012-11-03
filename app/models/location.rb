@@ -20,6 +20,6 @@ class Location < ActiveRecord::Base
   def self.save_address(address)
     #address = nil if address == Location::NoAddress
     create(:address => address)
-  end
+  endx
 
 end
