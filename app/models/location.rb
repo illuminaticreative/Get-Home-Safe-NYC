@@ -1,7 +1,8 @@
 class Location < ActiveRecord::Base
   self.per_page = 20
 
-  attr_accessible :address, :borough_id, :latitude, :longitude, :verified, :borough, :safe, :power, :elevators_safe, :elevators_available, :heat, :water, :flooding
+  attr_accessible :address, :borough_id, :latitude, :longitude, :verified, :borough, :safe, :power, :elevators_safe, :elevators_available, :heat, :water, :flooding, :elevator_status
+
   attr_accessor :newly_created
 
   belongs_to :borough
