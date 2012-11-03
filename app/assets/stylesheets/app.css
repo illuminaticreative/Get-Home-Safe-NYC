@@ -72,7 +72,7 @@ fieldset input[type="radio"]{}
 /*Table*/
 table{width:100%;}
 .basic_info td{display:inline-block;text-align:center;height:50px;width:49%;font-size:110%;}
-table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:8px 0 7px;}
+table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:11px 0 10px;}
 table tr,table thead,table tbody{width:100%;}
 tr.even{background-color:#eeeff3;}
 td{margin:0;padding:10px;display:inline-block;font-size:14px;text-align:left;}
