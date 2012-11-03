@@ -140,6 +140,7 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 /*Terms*/
 .press h2 { display: block; width: 100%; }
 .press p { font-size: 14px; padding: 5px 20px; }
+p.pounds { display: block; text-align: center; width: 100%; }
 
 @media (max-width: 959px) {
 	.title{margin:0;}
