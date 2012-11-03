@@ -21,7 +21,7 @@ class LocationsController < ApplicationController
     elsif @locations.size == 1
       redirect_to @locations.first and return
     else
-      @locations = Location.all
+      #@locations = Location.all
       flash.now[:error] = "Unable to find location."
       render 'index'
     end

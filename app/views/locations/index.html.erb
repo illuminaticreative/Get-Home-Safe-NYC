@@ -1,22 +1,24 @@
-	<table>	
-	<thead>
-		<tr>
-			<th class="safety">Status</th>			
-			<th class="address">Address</th>
-			<th class="updated">Last Updated</th>
-		</tr>
-	</thead>
-	</table>
-	<table>
-		<tbody>
-      <% if @locations.present? %>
-        <% @locations.each do |location| %>
-        <tr class="<%= cycle("odd", "even") %>">
-        <td class="safety <%=is_safe(location)%>"><img src="images/<%=is_safe(location)%>.svg"/></td>			
-        <td class="address"><%= link_to location.address, location %></td>
-        <td class="updated"><%= location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></td>
-		</tr>
-        <% end %>
-      <% end %>
-		</tbody>
-	</table>
+<table>	
+  <thead>
+    <tr>
+      <th class="safety">Status</th>			
+      <th class="address">Address</th>
+      <th class="updated">Last Updated</th>
+    </tr>
+  </thead>
+</table>
+<table>
+  <tbody>
+  <% if @locations.present? %>
+    <% @locations.each do |location| %>
+    <tr class="<%= cycle("odd", "even") %>">
+    <td class="safety <%=is_safe(location)%>"><img src="images/<%=is_safe(location)%>.svg"/></td>			
+    <td class="address"><%= link_to location.address, location %></td>
+    <td class="updated"><%= location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></td>
+  </tr>
+<% end %>
+  <% else %>
+  put stuff here
+<% end %>
+  </tbody>
+</table>
