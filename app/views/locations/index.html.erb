@@ -17,8 +17,9 @@
     <td class="updated"><%= location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></td>
   </tr>
 <% end %>
-  <% else %>
-  put stuff here
+<% else %>
+  <h2>Couldn't find your address?'</h2>
+  <a href="#"><span class="bold">CLICK HERE</span> to add your building.</a>
 <% end %>
   </tbody>
 </table>

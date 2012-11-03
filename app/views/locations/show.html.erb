@@ -10,6 +10,8 @@
 		<li>Power: <span class="bold <%= @location.power ? "on" : "off" %>"><%= @location.power ? "On" : "Off" %></span></li>
 		<li>Water: <span class="bold <%= @location.water ? "on" : "off" %>"><%= @location.water ? "On" : "Off" %></span></li>
 		<li>Heat: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.heat ? "On" : "Off" %></span></li>
+	</ul>
+	<ul>
 		<li>Flooding: <span class="bold <%= !@location.flooding ? "on" : "off" %>"><%= @location.flooding ? "YES" : "NO" %></span></li>
 		<% if @location.elevators_available %><li>Elevators: <span class="bold <%= @location.elevators_safe ? "on" : "off" %>"><%= @location.elevators_safe ? "YES" : "NO" %></span></li><% end %>
 	</ul>

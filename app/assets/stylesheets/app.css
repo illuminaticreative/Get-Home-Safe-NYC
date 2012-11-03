@@ -128,6 +128,14 @@ footer ul li a{color:#aaa;}
 footer ul li a:hover{text-decoration:none;color:#fff;}
 
 
+/*Terms*/
+.terms { margin-bottom: 50px; }
+.terms h2 { display: block; width: 100%; }
+.terms p { font-size: 14px; padding: 20px; }
+.terms ol { margin-left: 10%; width: 80%; }
+.terms ol li { font-size: 12px; margin-bottom: 20px; list-style-type: decimal; }
+
+
 @media (max-width: 959px) {
 	.title{margin:0;}
 	.navigation{display:block;border: none;}
