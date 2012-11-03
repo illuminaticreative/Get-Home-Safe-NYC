@@ -2,44 +2,51 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .pagination {
-  background: white;
+  background: #333;
   cursor: default;
-  height: 22px;
+  font-size: 12px;
+  margin: 0 auto;
+  width: auto;
+  text-align: center;
+	width: 100%;
   a, span, em {
-    padding: 0.2em 0.5em;
+    font-weight: bold;
+    padding: 0 01em;
     display: block;
     float: left;
-    margin-right: 1px;
+	padding: 0em 01em;
+	border: none;
   }
   .disabled {
     display: none;
   }
   .current {
-    font-style: normal;
-    font-weight: bold;
-    background: #2e6ab1;
-    color: white;
-    border: 1px solid #2e6ab1;
+     color: #007dc7;
+	line-height: 90%;
+	padding: 1em 01em;
+	text-style: normal; 
   }
+  .gap {
+	color: #fff;
+  }
+
   a {
     text-decoration: none;
-    color: #105cb6;
-    border: 1px solid #9aafe5;
+    color: #fff;
+	background: #333;
     &:hover, &:focus {
-      color: #000033;
-      border-color: #000033;
+      color: #000;
     }
   }
   .page_info {
-    background: #2e6ab1;
-    color: white;
-    padding: 0.4em 0.6em;
+    background: #fff;
+    color: 000;
+    padding: 0 01em;
     width: 22em;
-    margin-bottom: 0.3em;
     text-align: center;
     b {
-      color: #000033;
-      background: #2e6ab1 + 60;
+      color: #000;
+      background: #fff;
       padding: 0.1em 0.25em;
     }
   }

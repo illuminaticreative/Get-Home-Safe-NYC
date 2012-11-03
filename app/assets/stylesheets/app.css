@@ -70,9 +70,9 @@ fieldset input[type="radio"]{}
 .single_listing{margin:30px auto 30px auto;}
 
 /*Table*/
-table{width:100%;border-bottom:6px #000 solid;}
+table{width:100%;}
 .basic_info td{display:inline-block;text-align:center;height:50px;width:49%;font-size:110%;}
-table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:10px;}
+table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:8px 0 7px;}
 table tr,table thead,table tbody{width:100%;}
 tr.even{background-color:#eeeff3;}
 td{margin:0;padding:10px;display:inline-block;font-size:14px;text-align:left;}
@@ -92,11 +92,9 @@ div.address p{font-size:18px;line-height:42px;padding:20px;border-top:6px #000 s
 .status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
 .status p { font-size: 12px; }
 h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
-.statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0; margin: 0 auto; }
+.statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0 0; margin: 0 auto; }
 .statuses li {font-size:60%;margin:5px 0;float:left;padding:0px 0px 0px 20px; color: #fff; text-align: center;}
-.statuses li p {padding: 4px 8px; font-size: 11px; }
-.statuses li .on{color:#289600; padding: 0;}
-.statuses li .off{color:#c90000;background-color: transparent;  padding: 0;}
+.statuses li p {padding: 4px 8px 0; font-size: 11px; }
 
 /*Boroughs*/
 .navigation{display:none;background-color:#fff;font-size:55%;padding:0;}
@@ -208,7 +206,7 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
 	.sidebar h2 {font-size: 80%;}
 	.sidebar a.update_link { width: 280px; } 
-	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
+	.statuses li { margin-right: 0px; padding: 0 0 0 10px ; }
 	.statuses li a { font-size: 12px;}
 	ul.utility{margin:10px 0 0 20px;float:left;}
 	ul.utility li{ margin: 0;}
