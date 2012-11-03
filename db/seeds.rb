@@ -1,5 +1,4 @@
 Borough.destroy_all
-Location.destroy_all
 Zip.destroy_all
 
 manhattan = Borough.create(name:"manhattan")
