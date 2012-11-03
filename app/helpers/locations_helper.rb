@@ -7,15 +7,11 @@ module LocationsHelper
     location.safe ? "Safe" : "Not Safe"
   end
 
-  def is_checked
-    @location.elevators_safe ? "checked" : ""
+  def elevator_present
+    @location.elevator_status == "Yes" or @location.elevator_status == "No"
   end
 
-  def is_no
-    (not @location.elevators_safe && @location.elevators_available) ? "checked" : ""
-  end
-
-  def is_na
-    @location.elevators_available ? "" : "checked"
+  def elevator_safe
+    @location.elevator_status == "Yes" 
   end
 end

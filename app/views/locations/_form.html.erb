@@ -32,11 +32,11 @@
   <fieldset class="elevator">
   	<label for="elivator_status">Elevators are working?</label>
 	<div class="radios">
-    <input id="elevator_status_yes" <%= is_checked %> name="elevator_status" type="radio" value="yes">
+      <%= f.radio_button(:elevator_status, "Yes") %>
 	    <label class="radio">Yes</label>
-      <input id="elevator_status_no" <%= is_no %> name="elevator_status" type="radio" value="no">
+      <%= f.radio_button(:elevator_status, "No") %>
 	    <label class="radio">No</label>
-      <input id="elevator_status_not_applicable" <%= is_na %> name="elevator_status" type="radio" value="not applicable">
+      <%= f.radio_button(:elevator_status, "N/A") %>
 	    <label class="radio">N/A</label>
 	</div>
   </fieldset>

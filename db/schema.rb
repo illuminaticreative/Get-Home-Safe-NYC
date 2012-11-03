@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121102035838) do
+ActiveRecord::Schema.define(:version => 20121103145124) do
 
   create_table "boroughs", :force => true do |t|
     t.string   "name"
@@ -32,8 +32,9 @@ ActiveRecord::Schema.define(:version => 20121102035838) do
     t.boolean  "flooding"
     t.boolean  "elevators_available"
     t.boolean  "elevators_safe"
-    t.datetime "created_at",          :null => false
-    t.datetime "updated_at",          :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "elevator_status",     :default => "N/A", :null => false
   end
 
   create_table "zips", :force => true do |t|
