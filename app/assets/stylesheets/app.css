@@ -13,6 +13,7 @@ li{list-style:none;}
 span.bold { font-weight: bold; }
 
 .blue { color: #007dc7; }
+.green { color: #289600; }
 
 /* Header */
 .title{background-color:#000;color:#fff;font-size:225%;letter-spacing:-.05em;padding:30px 0 30px 0;width:100%;z-index:100000;}
@@ -23,13 +24,14 @@ span.bold { font-weight: bold; }
 .content{float:left;padding:0;width:640px;}
 
 /* Sidebar */
-.sidebar{margin:0;min-height:800px;height:100%;width:330px;float:left;border-left:1px solid #ccc; }
+.sidebar{margin:0;height:100%;width:330px;float:left;border-left:1px solid #ccc; max-width: 620px; }
 .sidebar .wrap{padding:20px;}
 .sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #dbdce0; }
 .sidebar section{margin-bottom:30px;}
 .sidebar h2{font-size: 80%;}
-.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #aaa; color: white; text-align: center; font-size: 60%; font-weight: bold;}
-.sidebar a.update_link:hover { text-decoration: none; background: #007dc7; }
+.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #aaa; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
+-moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #555;}
+.sidebar a.update_link:hover { text-decoration: none; background: #007dc7; border-radius: 3px;text-shadow: 1px 1px #005297;}
 section.about p{color:#aaa;}
 section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
@@ -88,6 +90,7 @@ div.address p{font-size:36px;line-height:42px;padding:20px;border-top:6px #000 s
 .status.safe{background-color:#289600;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status h2{color:#fff;padding:12px 20px;}
 .status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
+.status p { font-size: 12px; }
 h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
 .statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0;}
 .statuses li{font-size:60%;margin:5px 0;float:left;padding:0px 0px 0px 20px; color: #fff; }
@@ -135,6 +138,8 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 .terms ol { margin-left: 10%; width: 80%; }
 .terms ol li { font-size: 12px; margin-bottom: 20px; list-style-type: decimal; }
 
+/*Terms*/
+.press p { font-size: 14px; padding: 5px 20px; }
 
 @media (max-width: 959px) {
 	.title{margin:0;}
@@ -200,6 +205,7 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
 	.sidebar h2 {font-size: 80%;}
+	.sidebar a.update_link { width: 280px; } 
 	.statuses li { margin-right: 0px; padding: 10px 0 10px 10px ; }
 	.statuses li a { font-size: 12px;}
 	ul.utility{margin:10px 0 0 10px;float:left;}

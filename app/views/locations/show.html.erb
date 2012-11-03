@@ -7,13 +7,14 @@
 		<p><%= @location.address %></p>
 	</div>
 	<ul class="statuses clearfix">
-		<li>Power: <span class="bold <%= @location.power ? "on" : "off" %>"><%= @location.power ? "On" : "Off" %></span></li>
-		<li>Water: <span class="bold <%= @location.water ? "on" : "off" %>"><%= @location.water ? "On" : "Off" %></span></li>
-		<li>Heat: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.heat ? "On" : "Off" %></span></li>
+		<li>Power: <span class="bold <%= @location.power ? "on" : "off" %>"><%= @location.power ? "Yes" : "No" %></span></li>
+		<li>Water: <span class="bold <%= @location.water ? "on" : "off" %>"><%= @location.water ? "Yes" : "No" %></span></li>
+		<li>Heat: <span class="bold <%= @location.heat ? "on" : "off" %>"><%= @location.heat ? "Yes" : "No" %></span></li>
+		<% if @location.elevators_available %><li>Elevators: <span class="bold <%= @location.elevators_safe ? "on" : "off" %>"><%= @location.elevators_safe ? "Yes" : "No" %></span></li><% end %>
 	</ul>
-	<ul>
-		<li>Flooding: <span class="bold <%= !@location.flooding ? "on" : "off" %>"><%= @location.flooding ? "YES" : "NO" %></span></li>
-		<% if @location.elevators_available %><li>Elevators: <span class="bold <%= @location.elevators_safe ? "on" : "off" %>"><%= @location.elevators_safe ? "YES" : "NO" %></span></li><% end %>
+	<ul class="statuses clearfix">
+		<li>Flooding: <span class="bold <%= !@location.flooding ? "on" : "off" %>"><%= @location.flooding ? "Yes" : "No" %></span></li>
+		
 	</ul>
 	<ul class="social clearfix">
 		<li><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgethomesafenyc.com%3Alocations%3A<%= @location.id %>&amp;send=false&amp;layout=button_count&amp;width=74&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=135962049879310" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:74px; height:21px;" allowTransparency="true"></iframe></li>
