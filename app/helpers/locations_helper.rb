@@ -14,4 +14,11 @@ module LocationsHelper
   def elevator_safe
     @location.elevator_status == "Yes" 
   end
+  
+  #def address_local
+  #  s = @location.address
+  #  s.slice! ", USA"
+  #  s
+  #end
+    
 end
