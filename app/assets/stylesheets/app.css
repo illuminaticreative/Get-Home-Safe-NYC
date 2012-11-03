@@ -12,6 +12,8 @@ p{font-size:60%;}
 li{list-style:none;}
 span.bold { font-weight: bold; }
 
+.fbimg { position: absolute; left: -9999px; }
+
 .blue { color: #007dc7; }
 .green { color: #289600; }
 
