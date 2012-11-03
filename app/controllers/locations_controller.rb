@@ -1,6 +1,6 @@
 class LocationsController < ApplicationController
   def index
-    @locations = Location.all
+    @locations = Location.order('created_at DESC').page(params[:page])
   end
 
   def new
@@ -15,7 +15,7 @@ class LocationsController < ApplicationController
 
   def search
     address = params[:address]
-    @locations = Location.where("address like ?", "%#{address}%")
+    @locations = Location.where("address like ?", "%#{address}%").page(params[:page])
     if @locations.size > 1
       render 'index' and return
     elsif @locations.size == 1

@@ -1,5 +1,5 @@
 <% if @locations.present? %>
-<table>	
+<table id="locations">	
   <thead>
     <tr>
       <th class="safety">Status</th>			
@@ -23,4 +23,5 @@
   <h2>Couldn't find your address?</h2>
   <a href="#">If you have any information please update your neighbors HERE.</a>
 <% end %>
-  
+
+<%= will_paginate @locations %>
