@@ -1,5 +1,5 @@
 Borough.destroy_all
-#Location.destroy_all
+Location.destroy_all
 Zip.destroy_all
 
 manhattan = Borough.create(name:"manhattan")
@@ -8,7 +8,7 @@ queens = Borough.create(name:"queens")
 brooklyn = Borough.create(name:"brooklyn")
 staten = Borough.create(name:"staten_island")
 
-100.times{ Location.create(address:"#{rand(1000)} E. 5th St.") }
+#100.times{ Location.create(address:"#{rand(1000)} E. 5th St.") }
 
 Zip.create(zipcode:"10451")
 Zip.create(zipcode:"10452")
