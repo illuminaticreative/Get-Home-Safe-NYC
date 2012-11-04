@@ -88,8 +88,8 @@ td.updated,th.updated{width:20%;font-size:50%;text-align:left;}
 div.address{width:100%;background-color:#f7f7f9;}
 div.address p{font-size:18px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;}
 .status{margin:0 0 -1px 0;width:100%;background-color:#000;}
-.status.notsafe{background-color:#c90000;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
-.status.safe{background-color:#289600;width:auto;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;}
+.status.notsafe{background-color:#c90000;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
+.status.safe{background-color:#289600;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status h2{color:#fff;padding:12px 20px;}
 .status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
 .status p { font-size: 12px; }
@@ -153,6 +153,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.navigation ul{width:100%;}
 	.container{width:100%;}
 	.content{padding:0;}
+	.status.safe {border-top:6px #000 solid;}
+	.status.notsafe {border-top:6px #000 solid;}	
 	.search{float:left;margin:0;padding:10px 0;width:100%;}
 	.search form{padding:0 20px;}
 	.sidebar{border:none;width:auto;margin-top: 20px}
@@ -169,6 +171,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	
 	body{padding-right:0;padding-left:0;}
 	.title{font-size:200%;}
+	.status.safe {border-top:6px #000 solid;}
+	.status.notsafe {border-top:6px #000 solid;}
 	.sidebar {margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar section{width:100%;float:left;}
@@ -184,6 +188,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.title{font-size:130%;text-align:center;}
 	.container{margin:0 auto;padding:0;width:100%;}
 	.content{padding:0;border:none;}
+	.status.safe {border-top:6px #000 solid;}
+	.status.notsafe {border-top:6px #000 solid;}
 	.navigation{display:block;}
 	.navigation ul{display:none;margin:0;padding:0;width:100%;}
 	.navigation li{background-color:#fff;display:block;margin:0;border-bottom:1px #aaa solid;}
@@ -208,6 +214,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	body{padding:0;margin:0; }
 	.container{margin:0; padding:0; width:100%; overflow: hidden;}	
 	div.address p{font-size:14px;}
+	.status.safe {border-top:6px #000 solid;}
+	.status.notsafe {border-top:6px #000 solid;}
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 18px;}
 	.sidebar {  margin-top: 20px}
