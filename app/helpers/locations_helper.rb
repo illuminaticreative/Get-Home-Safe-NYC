@@ -15,10 +15,10 @@ module LocationsHelper
     @location.elevator_status == "Yes" 
   end
   
-  #def address_local
-  #  s = @location.address
-  #  s.slice! ", USA"
-  #  s
-  #end
+  def address_local location
+    s = location.address
+    s.slice! ", USA"
+    s
+  end
     
 end

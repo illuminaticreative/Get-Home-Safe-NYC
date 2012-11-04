@@ -112,6 +112,9 @@ h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:rig
 .brooklyn.current{background-color:#da007e;}
 .staten_island.current{background-color:#632da9;}
 
+/*Map*/
+.map {width: 100%;}
+.map-holder {border: 6px #000 solid; }
 
 /*Social Nav*/
 .single ul.social { margin: 10px 20px; width: 250px; float: left; }

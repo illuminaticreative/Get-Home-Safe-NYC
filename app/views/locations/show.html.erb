@@ -4,7 +4,7 @@
 			<h2><%=safe_label(@location)%></h2>
 			<h3 class="update"><%= @location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></h3>
 		</div>
-		<p><%= @location.address %></p>
+		<p><%= address_local(@location) %></p>
 	</div>
 	<ul class="statuses clearfix">
 		<li><img src="/images/<%= @location.power ? "safe" : "notsafe"%>.svg"/><p>Power</p></li>
@@ -15,6 +15,11 @@
       <li><img src="/images/<%= elevator_safe ? "safe" : "notsafe"%>.svg"/><p>Elevators</p></li>
     <% end %>
 	</ul>
+	<div class="map">
+		<div class="map-holder">
+	    <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=<%= @location.address %>&amp;ie=UTF8&amp;hq=&amp;hnear=<%= @location.address %>&amp;gl=us&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near"></iframe>
+		</div>
+	</div>
   <ul class="social clearfix">
     <li><iframe width="100%" height="200px" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fgethomesafenyc.com%3Alocations%3A<%= @location.id %>&amp;send=false&amp;layout=button_count&amp;width=74&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp;appId=135962049879310" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:74px; height:21px;" allowTransparency="true"></iframe></li>
     <li><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gethomesafenyc.com/locations/<%= @location.id %>" data-text="Help your fellow New Yorkers!" data-hashtags="gethomesafenyc">Tweet</a>
