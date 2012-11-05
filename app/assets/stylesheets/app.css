@@ -31,9 +31,9 @@ span.bold { font-weight: bold; }
 .sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #dbdce0; }
 .sidebar section{margin-bottom:30px;}
 .sidebar h2{font-size: 80%;}
-.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #aaa; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
--moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #555;}
-.sidebar a.update_link:hover { text-decoration: none; background: #007dc7; border-radius: 3px;text-shadow: 1px 1px #005297;}
+.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #209700; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
+-moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #125600;}
+.sidebar a.update_link:hover { text-decoration: none; background: #166700; border-radius: 3px;text-shadow: 1px 1px #0d3c00;}
 section.about p{color:#aaa;}
 section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
