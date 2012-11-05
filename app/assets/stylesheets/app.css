@@ -147,13 +147,13 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 
 /*Terms*/
 .terms { margin-bottom: 50px; }
-.terms h2 { display: block; width: 100%; }
+.terms h2 { display: block; width: 100%;  margin-bottom: 20px;}
 .terms p { font-size: 14px; padding: 20px; }
 .terms ol { margin-left: 10%; width: 80%; }
 .terms ol li { font-size: 12px; margin-bottom: 20px; list-style-type: decimal; }
 
 /*Terms*/
-.press h2 { display: block; width: 100%; }
+.press h2 { display: block; width: 100%; margin-bottom: 20px;}
 .press p { font-size: 14px; padding: 5px 20px; }
 p.pounds { display: block; text-align: center; width: 100%; }
 
