@@ -187,7 +187,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	div.address p{border-left:none;border-right:none;}	
 	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
 	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}
-	.sidebar {margin-top: 20px}
+	.sidebar {margin-top: 0px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar section{width:100%;float:left;}
 	.sidebar .search{display:none;}
@@ -205,11 +205,12 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	header a.update_link { margin: 14px 20px 0 0; padding: 7px 0;background-position: 0px 0px; padding: 0; text-indent: -9999px; width: 30px; height: 30px;position:absolute; right: -10px; top:-2px;}
 	header a.update_link { }
 	.content{padding:0;border:none;}
+	.content h2{font-size:100%;background: #f7f7f9;width: 100%; padding: 20px 20px 0px 20px; }
 	div.address p{border-left:none;border-right:none;}	
 	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
 	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}
   .status h4 { margin: -5px 0;}
-	.status h2 { font-size: 100%; display: inline; width: auto;}
+	h2.status { font-size: 100%; display: inline; width: auto; width: 150px;padding: 10px 20px;}
 	.content .status.safe h2 {background-position: 10px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 20px; }
 	.content .status.notsafe h2 {background-position: 7px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 15px;}
 	
@@ -220,7 +221,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.search{margin-top:-1px;}
 	ul.utility{margin:10px 20px 10px 20px;float:right;}
 	ul.utility li{ margin: 0;}
-	.sidebar{min-height:inherit;position:relative;margin-top: 20px}
+	.sidebar{min-height:inherit;position:relative;margin-top: 0px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar .search{display:none;}
 	.sidebar h2{font-size: 100%;}
@@ -247,7 +248,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h4 { margin: -5px 0; }
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 0px;}
-	.sidebar {  margin-top: 20px}
+	.sidebar {  margin-top: 0px}
 	.sidebar h2 {font-size: 80%;}
 	].update_link { width: 280px; } 
 	

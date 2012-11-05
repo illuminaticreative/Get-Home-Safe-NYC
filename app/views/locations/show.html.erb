@@ -1,7 +1,7 @@
 <section class="single">
 	<div class="address clearfix">
 		<div class="status <%=is_safe(@location)%> clearfix">
-			<h2><%=safe_label(@location)%></h2>
+			<h2 class="status"><%=safe_label(@location)%></h2>
 			<h4>Last Updated</h4>
 			<h3 class="update"><%= @location.updated_at.strftime("%m/%d/%Y %I:%M%p") %></h3>
 		</div>
