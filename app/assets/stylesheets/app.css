@@ -18,10 +18,12 @@ span.bold { font-weight: bold; }
 .green { color: #289600; }
 
 /* Header */
-.title{background-color:#000;color:#fff;font-size:225%;letter-spacing:-.05em;padding:30px 0 30px 0;width:100%;z-index:100000;}
+header {background-color:#000;width: 100%;}
+.title{color:#fff;font-size:225%;letter-spacing:-.05em;padding:30px 0 30px 0;width:auto;z-index:100000;float:left;background:none;}
 .title a{padding:0 20px;}
 .title a,.title a:hover{color:#fff;text-decoration:none;}
-
+header a.update_link { display:none; }
+header a.update_link:hover { text-decoration: none; background-color: #166700; border-radius: 3px;text-shadow: 1px 1px #0d3c00;}
 .container{padding:0;margin:0;width:1024px;margin:0 auto;background-color:#fff;-moz-box-shadow:0px 0px 4px #bebfc2;-webkit-box-shadow:0px 0px 4px #bebfc2;box-shadow:0px 0px 4px #bebfc2;overflow: hidden;}
 .content{float:left;padding:0;width:684px;}
 
@@ -31,7 +33,7 @@ span.bold { font-weight: bold; }
 .sidebar .search{ width: 300px; padding:6px 20px; margin: 0 0 0 0px; float: none; border: none; background-color: #dbdce0; }
 .sidebar section{margin-bottom:30px;}
 .sidebar h2{font-size: 80%;}
-.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background: #209700; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
+.sidebar a.update_link { margin-top: 10px; font-size: 120%;  display: inline-block; width:300px; padding: 10px 0; background:url(../images/plus.svg) top left no-repeat;background-color: #209700;background-position: 14px 4px; text-indent: 16px;color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
 -moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #125600;}
 .sidebar a.update_link:hover { text-decoration: none; background: #166700; border-radius: 3px;text-shadow: 1px 1px #0d3c00;}
 section.about p{color:#aaa;}
@@ -105,7 +107,7 @@ h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:rig
 .status-footer { background: #000; }
 
 /*Boroughs*/
-.navigation{display:none;background-color:#fff;font-size:55%;padding:0;}
+.navigation{display:none;font-size:55%;padding:0;}
 .navigation ul{float:left;height:100%;margin:0;padding:0;width:64%;}
 .navigation li{background-color:#fff;display:inline-block;margin:0;}
 .navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 15px 14px 15px;}
@@ -119,7 +121,7 @@ h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:rig
 .staten_island.current{background-color:#632da9;}
 
 /*Map*/
-.map {width: 100%;}
+.map {width: 100%; height: 350px; }
 .map-holder {border: 6px #000 solid; border-top:none;}
 
 /*Social Nav*/
@@ -155,8 +157,11 @@ footer ul li a:hover{text-decoration:none;color:#fff;}
 p.pounds { display: block; text-align: center; width: 100%; }
 
 @media (max-width: 959px) {
+	header{background: #000;display: block;}
 	.title{margin:0;}
-	.navigation{display:block;border: none;}
+	header a.update_link { margin: 30px 20px 0 0; display: inline-block; width:200px; padding: 9px 0; float:right; color: white; text-align: center; font-size: 60%; font-weight: bold;-webkit-border-radius: 3px;
+	-moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #125600;background:url(../images/plus.svg) top left no-repeat;background-color: #209700;background-position: 14px 4px; text-indent: 16px;}
+	.navigation{display:block;border:none;}
 	.navigation ul{width:100%;}
 	.container{width:100%;}
 	.content{padding:0;}
@@ -179,7 +184,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 @media (max-width: 767px) {
 	
 	body{padding-right:0;padding-left:0;}
-	.title{font-size:200%;}
+	.title{font-size:160%;}
+	header a.update_link { width:180px; padding: 7px 0;font-size: 60%;background-position: 8px 4px;text-indent: 18px;}
 	div.address p{border-left:none;border-right:none;}	
 	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
 	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}
@@ -191,13 +197,14 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.boroughs{padding:0;margin:0 auto;width:90%;}
 	.boroughs h2{padding-left:20px;}
 	.boroughs ul{width:90%;margin:10px auto 0 auto;}
-		.map-holder {border-left:none;border-right:none;}
+	.map-holder {border-left:none;border-right:none;}
 }
 
 @media (max-width: 600px) {
 	body{padding:0;}
-	.title{font-size:130%;text-align:center;}
-	.container{margin:0 auto;padding:0;width:100%;}
+	.title{font-size:100%;text-align:center; padding: 10px 0;}
+	header a.update_link { margin: 14px 20px 0 0; padding: 7px 0;background-position: 0px 0px; padding: 0; text-indent: -9999px; width: 30px; height: 30px;}
+	header a.update_link { }
 	.content{padding:0;border:none;}
 	div.address p{border-left:none;border-right:none;}	
 	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
@@ -209,7 +216,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	
 	.navigation{display:block;}
 	.navigation ul{display:none;margin:0;padding:0;width:100%;}
-	.navigation li{background-color:#fff;display:block;margin:0;border-bottom:1px #aaa solid;}
+	.navigation li{display:block;margin:0;border-bottom:1px #aaa solid;}
 	.navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 10px 14px 10px;}
 	.search{margin-top:-1px;}
 	ul.utility{margin:5px 0 15px 20px;float:left;}
@@ -224,6 +231,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	footer ul.footer-nav{width:auto; float:left; clear:left; margin:20px 0 20px 0; }
 	.terms h2 { font-size: 100%; }
 	.press h2 { font-size: 100%; }
+	.map {height: 200px; }
 	.map-holder {border-left:none;border-right:none;}
 }
 
@@ -242,7 +250,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.status h3.update { font-size: 12px; display: inline;width: auto; padding-top: 0px;}
 	.sidebar {  margin-top: 20px}
 	.sidebar h2 {font-size: 80%;}
-	.sidebar a.update_link { width: 280px; } 
+	].update_link { width: 280px; } 
+	
 	.statuses li { margin-right: 0px; padding: 0 0 0 10px ; }
 	.statuses li a { font-size: 12px;}
 	ul.utility{margin:5px 0 15px 20px;float:left;}
@@ -251,6 +260,6 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.terms h2 { font-size: 80%; }
 	.press h2 { font-size: 80%; }
 	td.address,th.address{width:75%;}
-	
+	.map {height: 200px; }	
 	.map-holder {border-left:none;border-right:none;}
 }
