@@ -202,7 +202,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	body{padding:0;}
 	header{text-align: center;}
 	.title{font-size:90%;text-align:center; padding: 10px 0;text-align:center;float:none;width: 260px;margin: 0 0;display: inline-block;}
-	header a.update_link { margin: 14px 20px 0 0; padding: 7px 0;background-position: 0px 0px; padding: 0; text-indent: -9999px; width: 30px; height: 30px;position:absolute; right: -10px;}
+	header a.update_link { margin: 14px 20px 0 0; padding: 7px 0;background-position: 0px 0px; padding: 0; text-indent: -9999px; width: 30px; height: 30px;position:absolute; right: -10px; top:-2px;}
 	header a.update_link { }
 	.content{padding:0;border:none;}
 	div.address p{border-left:none;border-right:none;}	
