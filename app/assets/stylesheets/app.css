@@ -35,6 +35,7 @@ span.bold { font-weight: bold; }
 -moz-border-radius: 3px; border-radius: 3px;text-shadow: 1px 1px #125600;}
 .sidebar a.update_link:hover { text-decoration: none; background: #166700; border-radius: 3px;text-shadow: 1px 1px #0d3c00;}
 section.about p{color:#aaa;}
+section.disclaimer { margin-bottom: 0px; }
 section.disclaimer p{color:#aaa;font-size:50%;}
 section.disclaimer p .propmpt{color:#000;}
 
@@ -159,8 +160,9 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.navigation ul{width:100%;}
 	.container{width:100%;}
 	.content{padding:0;}
-	.status.safe {border-top:6px #000 solid;}
-	.status.notsafe {border-top:6px #000 solid;}	
+	div.address p{border-left:none;border-right:none;}
+	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
+	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}	
 	.search{float:left;margin:0;padding:10px 0;width:100%;}
 	.search form{padding:0 20px;}
 	.sidebar{border:none;width:auto;margin-top: 20px}
@@ -169,6 +171,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.sidebar h2{font-size: 150%;}
 	.content{float:none;width:auto;}
 	.content table{padding:0;width:100%;}
+	.map-holder {border-left:none;border-right:none;}
 }
 
 
@@ -177,8 +180,9 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	
 	body{padding-right:0;padding-left:0;}
 	.title{font-size:200%;}
-	.status.safe {border-top:6px #000 solid;}
-	.status.notsafe {border-top:6px #000 solid;}
+	div.address p{border-left:none;border-right:none;}	
+	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
+	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}
 	.sidebar {margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar section{width:100%;float:left;}
@@ -187,6 +191,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.boroughs{padding:0;margin:0 auto;width:90%;}
 	.boroughs h2{padding-left:20px;}
 	.boroughs ul{width:90%;margin:10px auto 0 auto;}
+		.map-holder {border-left:none;border-right:none;}
 }
 
 @media (max-width: 536px) {
@@ -194,8 +199,9 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.title{font-size:130%;text-align:center;}
 	.container{margin:0 auto;padding:0;width:100%;}
 	.content{padding:0;border:none;}
-	.status.safe {border-top:6px #000 solid;}
-	.status.notsafe {border-top:6px #000 solid;}
+	div.address p{border-left:none;border-right:none;}	
+	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
+	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}
   .status h4 { margin: -5px 0;}
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.content .status.safe h2 {background-position: 10px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 20px; }
@@ -219,15 +225,15 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	footer ul.footer-nav{width:auto;margin: 20px auto; }
 	.terms h2 { font-size: 100%; }
 	.press h2 { font-size: 100%; }
-	
+	.map-holder {border-left:none;border-right:none;}
 }
 
 @media (max-width: 320px) {
 	body{padding:0;margin:0; }
 	.container{margin:0; padding:0; width:100%; overflow: hidden;}	
-	div.address p{font-size:14px;line-height:18px;}
-	.status.safe {border-top:6px #000 solid;}
-	.status.notsafe {border-top:6px #000 solid;}
+	div.address p{font-size:14px;line-height:18px;border-left:none;border-right:none;}
+	.status.safe {border-top:6px #000 solid;border-left:none;border-right:none;}
+	.status.notsafe {border-top:6px #000 solid;border-left:none;border-right:none;}
 	
 	.content .status.safe h2 {background-position: 10px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 20px; }
 	.content .status.notsafe h2 {background-position: 7px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 15px;}
@@ -246,4 +252,6 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.terms h2 { font-size: 80%; }
 	.press h2 { font-size: 80%; }
 	td.address,th.address{width:75%;}
+	
+	.map-holder {border-left:none;border-right:none;}
 }
