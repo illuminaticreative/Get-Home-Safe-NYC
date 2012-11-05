@@ -86,17 +86,19 @@ td.updated,th.updated{width:20%;font-size:50%;text-align:left;}
 /*Individual Page*/
 .content h2{font-size:150%;float:left;padding:10px 20px;width:auto;margin:0;}
 div.address{width:100%;background-color:#f7f7f9;}
-div.address p{font-size:18px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;}
+div.address p{font-size:18px;line-height:42px;padding:20px;border-top:6px #000 solid;border-left:6px #000 solid;border-right:6px #000 solid;margin:0;font-weight: bold;}
 .status{margin:0 0 -1px 0;width:100%;background-color:#000;}
 .status.notsafe{background-color:#c90000;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status.safe{background-color:#289600;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status h2{color:#fff;padding:12px 20px;}
-.status h3.update{padding:30px 20px 0 0px;color:#fff;float:right;width:auto;text-align:left;font-weight:normal;font-size:14px;}
+.status h4{padding:10px 20px 0 0px;margin:0;color:#fff;float:right;font-weight:normal;font-size: 10px;}
+.status h3.update{padding:0px 20px 0 0px;color:#fff;float:right;clear:right;width:auto;text-align:left;font-size:14px;font-weight: bold;}
 .status p { font-size: 12px; }
 h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:right;margin-top:-5px;width:200px;min-width:0;}
 .statuses{margin:0;background-color:#000;display:block;width:100%; padding: 10px 0 0; margin: 0 auto; }
 .statuses li {font-size:60%;margin:5px 0;float:left;padding:0px 0px 0px 20px; color: #fff; text-align: center;}
 .statuses li p {padding: 4px 8px 0; font-size: 11px; }
+.status-footer { background: #000; }
 
 /*Boroughs*/
 .navigation{display:none;background-color:#fff;font-size:55%;padding:0;}
@@ -117,15 +119,16 @@ h2.not_safe{background-color:#c90000;border-top:double 15px;color:#fff;float:rig
 .map-holder {border: 6px #000 solid; border-top:none;}
 
 /*Social Nav*/
-.single ul.social { margin: 10px 20px; width: 250px; float: left; }
+.single ul.social { margin: 10px 20px; width: 210px; float: left; }
 ul.social{float:left;margin:0px 0 0 20px;width:auto;}
 ul.social li{float:left; margin: 0 10px 0 0;}
 ul.social li a{font-size:14px;padding:0px;}
 ul.social li a:hover{color:#fff;text-decoration:none;}
 
 /*Utility Nav*/
-ul.utility{margin:10px 10px 0 0;float:right;}
-ul.utility li{margin-left:20px;float:left;font-size:60%;}
+ul.utility{margin:10px 20px 0 0;float:right;}
+ul.utility li{float:left;font-size:60%;}
+ul.utility li a{color: #fff;}
 
 /*Footer*/
 footer { clear: both; display: block; background-color: #000; padding: 20px 0 16px; }
@@ -195,7 +198,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.navigation li{background-color:#fff;display:block;margin:0;border-bottom:1px #aaa solid;}
 	.navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 10px 14px 10px;}
 	.search{margin-top:-1px;}
-	ul.utility{margin:10px 0 0 20px;float:left;}
+	ul.utility{margin:5px 0 15px 20px;float:left;}
 	ul.utility li{ margin: 0;}
 	.sidebar{min-height:inherit;position:relative;margin-top: 20px}
 	.sidebar .wrap{margin-top:0px;}
