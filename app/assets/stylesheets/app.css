@@ -74,7 +74,7 @@ fieldset input[type="radio"]{}
 /*Table*/
 table{width:100%;}
 .basic_info td{display:inline-block;text-align:center;height:50px;width:49%;font-size:110%;}
-table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:11px 0 10px;}
+table th{color:#fff;background-color:#333;font-size:12px;font-weight:bold;margin:0;padding:11px 0 10px 5px;}
 table tr,table thead,table tbody{width:100%;}
 tr.even{background-color:#eeeff3;}
 td{margin:0;padding:10px;display:inline-block;font-size:14px;text-align:left;}
@@ -197,8 +197,9 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.status.safe {border-top:6px #000 solid;}
 	.status.notsafe {border-top:6px #000 solid;}
   .status h4 { margin-bottom: -5px;}
-	.content .status.safe h2 {background-position: 20px 17px;background-size: 20px 20px;padding:12px 20px 0 12px 20px; text-indent: 20px; }
-	.content .status.notsafe h2 {background-position: 17px 17px;background-size: 20px 20px;padding:12px 20px 0 12px 20px; text-indent: 20px;}
+	.status h2 { font-size: 100%; display: inline; width: auto;}
+	.content .status.safe h2 {background-position: 10px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 20px; }
+	.content .status.notsafe h2 {background-position: 7px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 15px;}
 	
 	.navigation{display:block;}
 	.navigation ul{display:none;margin:0;padding:0;width:100%;}
@@ -228,8 +229,8 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.status.safe {border-top:6px #000 solid;}
 	.status.notsafe {border-top:6px #000 solid;}
 	
-	.content .status.safe h2 {background-position: 10px 15px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 15px; }
-	.content .status.notsafe h2 {background-position: 7px 15px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 15px;}
+	.content .status.safe h2 {background-position: 10px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 20px; }
+	.content .status.notsafe h2 {background-position: 7px 14px;background-size: 20px 20px;padding:12px 20px 0 12px 0px; text-indent: 15px;}
 	
 	.status h2 { font-size: 100%; display: inline; width: auto;}
 	.status h4 { margin: -5px 0; }
