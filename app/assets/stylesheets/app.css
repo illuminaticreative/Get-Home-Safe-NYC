@@ -239,7 +239,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.sidebar a.update_link { width: 280px; } 
 	.statuses li { margin-right: 0px; padding: 0 0 0 10px ; }
 	.statuses li a { font-size: 12px;}
-	ul.utility{margin:10px 0 0 20px;float:left;}
+	ul.utility{margin:5px 0 15px 20px;float:left;}
 	ul.utility li{ margin: 0;}
 	fieldset div { margin-top: 10px; }
 	.terms h2 { font-size: 80%; }
