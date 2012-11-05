@@ -133,9 +133,9 @@ ul.social li a{font-size:14px;padding:0px;}
 ul.social li a:hover{color:#fff;text-decoration:none;}
 
 /*Utility Nav*/
-ul.utility{margin:10px 20px 0 0;float:right;}
+ul.utility{margin:10px 0 0 20px;float:left;}
 ul.utility li{float:left;font-size:60%;}
-ul.utility li a{color: #fff;}
+ul.utility li a{color: #fff;font-weight:bold;}
 
 /*Footer*/
 footer { clear: both; display: block; background-color: #000; padding: 20px 0 16px; }
@@ -219,7 +219,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.navigation li{display:block;margin:0;border-bottom:1px #aaa solid;}
 	.navigation a{display:block;color:#aaa;text-align:center;font-weight:bold;font-size:13px;padding:15px 10px 14px 10px;}
 	.search{margin-top:-1px;}
-	ul.utility{margin:10px 20px 10px 20px;float:right;}
+	ul.utility{margin:10px 20px 10px 20px;}
 	ul.utility li{ margin: 0;}
 	.sidebar{min-height:inherit;position:relative;margin-top: 0px}
 	.sidebar .wrap{margin-top:0px;}
@@ -254,8 +254,6 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	
 	.statuses li { margin-right: 0px; padding: 0 0 0 10px ; }
 	.statuses li a { font-size: 12px;}
-	ul.utility{margin:0px 0 10px 20px;float:left;}
-	ul.utility li{ margin: 0;}
 	fieldset div { margin-top: 10px; }
 	.terms h2 { font-size: 80%; }
 	.press h2 { font-size: 80%; }
