@@ -194,7 +194,7 @@ p.pounds { display: block; text-align: center; width: 100%; }
 		.map-holder {border-left:none;border-right:none;}
 }
 
-@media (max-width: 536px) {
+@media (max-width: 600px) {
 	body{padding:0;}
 	.title{font-size:130%;text-align:center;}
 	.container{margin:0 auto;padding:0;width:100%;}
@@ -218,11 +218,10 @@ p.pounds { display: block; text-align: center; width: 100%; }
 	.sidebar .wrap{margin-top:0px;}
 	.sidebar .search{display:none;}
 	.sidebar h2{font-size: 100%;}
-	footer ul.footer-nav{width:auto;float:none;margin-left:18px;}
-	ul.social{float:none;margin:20px 10px 0 20px;width:auto;}
+	ul.social{float:none;margin:20px 10px 0 20px;width:220px;}
 	td.updated,th.updated{display:none;}
 	
-	footer ul.footer-nav{width:auto;margin: 20px auto; }
+	footer ul.footer-nav{width:auto; float:left; clear:left; margin:20px 0 20px 0; }
 	.terms h2 { font-size: 100%; }
 	.press h2 { font-size: 100%; }
 	.map-holder {border-left:none;border-right:none;}
