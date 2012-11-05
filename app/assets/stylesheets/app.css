@@ -90,7 +90,10 @@ div.address p{font-size:18px;line-height:42px;padding:20px;border-top:6px #000 s
 .status{margin:0 0 -1px 0;width:100%;background-color:#000;}
 .status.notsafe{background-color:#c90000;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
 .status.safe{background-color:#289600;width:auto;border-left:6px #000 solid;border-right:6px #000 solid;}
-.status h2{color:#fff;padding:12px 20px;}
+
+.status h2{color:#fff;;}
+.content .status.safe h2 {background:url(../images/safe_title.svg) top left no-repeat; background-position: 20px 17px;padding:12px 20px 0 12px 40px; text-indent: 40px; }
+.content .status.notsafe h2 {background:url(../images/notsafe_title.svg) top left no-repeat;background-position: 17px 17px;padding:12px 20px 0 12px 40px; text-indent: 40px;}
 .status h4{padding:10px 20px 0 0px;margin:0;color:#fff;float:right;font-weight:normal;font-size: 10px;}
 .status h3.update{padding:0px 20px 0 0px;color:#fff;float:right;clear:right;width:auto;text-align:left;font-size:14px;font-weight: bold;}
 .status p { font-size: 12px; }
